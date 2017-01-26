@@ -1,0 +1,477 @@
+# Brazilian Portuguese translation for gui-ufw
+# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
+# This file is distributed under the same license as the gui-ufw package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gui-ufw\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2012-05-03 10:05+0200\n"
+"PO-Revision-Date: 2012-05-23 13:23+0000\n"
+"Last-Translator: Rafael Neri <Unknown>\n"
+"Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-06-09 08:01+0000\n"
+"X-Generator: Launchpad (build 15376)\n"
+
+#: view/guiGufw.py:137
+msgid "To"
+msgstr "Para"
+
+#: view/guiGufw.py:141
+msgid "Action"
+msgstr "Ação"
+
+#: view/guiGufw.py:145
+msgid "From"
+msgstr "De"
+
+#: view/guiGufw.py:156
+msgid "Protocol"
+msgstr "Protocolo"
+
+#: view/guiGufw.py:159
+msgid "Port"
+msgstr "Porta"
+
+#: view/guiGufw.py:162
+msgid "Address"
+msgstr "Endereço"
+
+#: view/guiGufw.py:165
+msgid "Application"
+msgstr "Aplicativo"
+
+#: view/guiGufw.py:445
+msgid "Select rule(s)"
+msgstr "Selecionar regra(s)"
+
+#: view/guiGufw.py:460
+msgid "Removing rules..."
+msgstr "Removendo regras..."
+
+#: view/guiGufw.py:488
+msgid "Rule(s) removed"
+msgstr "Regra(s) removidas"
+
+#: view/guiGufw.py:490 view/guiGufw.py:567 view/guiGufw.py:605
+#: view/guiGufw.py:670 view/guiGufw.py:731
+msgid "Error performing operation"
+msgstr "Erro ao realizar operação"
+
+#: view/guiGufw.py:565 view/guiGufw.py:603 view/guiGufw.py:668
+#: view/guiGufw.py:729
+msgid "Rule added"
+msgstr "Regra adicionada"
+
+#: view/guiGufw.py:658
+msgid "Error: Insert a port number"
+msgstr "Erro: insira um número de porta"
+
+#: view/guiGufw.py:662 view/guiGufw.py:720 view/guiGufw.py:724
+msgid "Error: Range ports only with tcp or udp protocol"
+msgstr "Erro: alinhar portas somente com os protocolos TCP ou UDP"
+
+#: view/guiGufw.py:716
+msgid "Error: Fields filled out incorrectly"
+msgstr "Erro: campos preenchidos incorretamente"
+
+#: view/guiGufw.py:810
+msgid "Wrong identification"
+msgstr "Identificação incorreta"
+
+#: view/guiGufw.py:936
+msgid "Enabled firewall"
+msgstr "Firewall habilitado"
+
+#: view/guiGufw.py:941
+msgid "Disabled firewall"
+msgstr "Firewall desabilitado"
+
+#: view/guiGufw.py:955
+msgid "Deny all INCOMING traffic"
+msgstr "Negar todo tráfego de ENTRADA"
+
+#: view/guiGufw.py:959
+msgid "Reject all INCOMING traffic"
+msgstr "Rejeitar todo tráfego de ENTRADA"
+
+#: view/guiGufw.py:963
+msgid "Allow all INCOMING traffic"
+msgstr "Permitir todo tráfego de ENTRADA"
+
+#: view/guiGufw.py:977
+msgid "Deny all OUTGOING traffic"
+msgstr "Negar todo tráfego de SAÍDA"
+
+#: view/guiGufw.py:981
+msgid "Reject all OUTGOING traffic"
+msgstr "Rejeitar todo tráfego de SAÍDA"
+
+#: view/guiGufw.py:985
+msgid "Allow all OUTGOING traffic"
+msgstr "Permitir todo tráfego de SAÍDA"
+
+#: view/guiGufw.py:1031
+msgid ""
+"© 2008-2012 The Gufw Project\n"
+"Shield logo © 2007 Michael Spiegel"
+msgstr ""
+"© 2008-2012 O Projeto Gufw\n"
+"Logotipo escudo © 2007 Michael Spiegel"
+
+#: view/guiGufw.py:1032
+msgid "Graphical user interface for ufw"
+msgstr "Interface gráfica do usuário para ufw"
+
+#: view/guiGufw.py:1035
+msgid ""
+"Lead developer:\n"
+"Marcos Alvarez Costales https://launchpad.net/~costales\n"
+"\n"
+"Developers (in alphabetical order):\n"
+"David Planella https://launchpad.net/~dpm\n"
+"Emilio López https://launchpad.net/~turl\n"
+"Giacomo Picchiarelli https://launchpad.net/~gpicchiarelli\n"
+"Jeremy Bicha https://launchpad.net/~jbicha\n"
+"Raúl Soriano https://launchpad.net/~gatoloko\n"
+"Rogério Vicente https://launchpad.net/~rogeriopvl\n"
+"Rubén Megido https://launchpad.net/~runoo\n"
+"Vadim Peretokin https://launchpad.net/~vperetokin\n"
+"\n"
+"Contributors:\n"
+"Cedrick Hannier https://launchpad.net/~cedynamix\n"
+"\n"
+"MOTU\n"
+"Devid Antonio Filoni https://launchpad.net/~d.filoni"
+msgstr ""
+"Desenvolvedor líder:\n"
+"Marcos Alvarez Costales https://launchpad.net/~costales\n"
+"\n"
+"Desenvolvedores (em ordem alfabética):\n"
+"David Planella https://launchpad.net/~dpm\n"
+"Emilio López https://launchpad.net/~turl\n"
+"Giacomo Picchiarelli https://launchpad.net/~gpicchiarelli\n"
+"Jeremy Bicha https://launchpad.net/~jbicha\n"
+"Raúl Soriano https://launchpad.net/~gatoloko\n"
+"Rogério Vicente https://launchpad.net/~rogeriopvl\n"
+"Rubén Megido https://launchpad.net/~runoo\n"
+"Vadim Peretokin https://launchpad.net/~vperetokin\n"
+"\n"
+"Contribuidores:\n"
+"Cedrick Hannier https://launchpad.net/~cedynamix\n"
+"\n"
+"MOTU\n"
+"Devid Antonio Filoni https://launchpad.net/~d.filoni\n"
+"\n"
+"Tradutores:\n"
+"Rafael Neri https://launchpad.net/~rafepel"
+
+#: view/guiGufw.py:1053
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Allan Lopes Peretti https://launchpad.net/~mendigodase\n"
+"  Anjolo https://launchpad.net/~anjolo-2\n"
+"  Costales https://launchpad.net/~costales\n"
+"  Daniel Frank https://launchpad.net/~mitzgitari\n"
+"  Davemedia https://launchpad.net/~davecadastro\n"
+"  Douglas Santos https://launchpad.net/~douglasrpg\n"
+"  Elton Pereira de Lima https://launchpad.net/~eltonplima\n"
+"  José Humberto Alvarenga Melo https://launchpad.net/~josehumberto-melo\n"
+"  Laete Meireles do Nascimento https://launchpad.net/~laetemn\n"
+"  Matheus de Araújo https://launchpad.net/~suetamac\n"
+"  Mário Augusto Souza Nunes https://launchpad.net/~contato-marionunes\n"
+"  Rafael C. Brandão https://launchpad.net/~rcbrandao\n"
+"  Rafael Neri https://launchpad.net/~rafepel\n"
+"  Rodrigo Borges https://launchpad.net/~rbm0407\n"
+"  Ronaldo Luiz Pedroso https://launchpad.net/~ronaldo-luiz-pedroso\n"
+"  Sam Samuels https://launchpad.net/~gemini-sam-samuels\n"
+"  Sergio https://launchpad.net/~ikisham\n"
+"  ThiagoSerra https://launchpad.net/~thiagoserra\n"
+"  Wanderson Santiago dos Reis https://launchpad.net/~wasare"
+
+#: view/guiGufw.py:1054
+msgid "Shield logo by myke http://michael.spiegel1.at/"
+msgstr "Logotipo escudo feito por myke http://michael.spiegel1.at/"
+
+#: view/guiGufw.py:1092
+msgid "Reloaded ufw rules"
+msgstr "Recarregar regras do ufw"
+
+#: view/guiGufw.py:1099
+msgid "This will remove all rules and disable the firewall!"
+msgstr "Isso removerá todas as regras e desabilitará o firewall!"
+
+#: view/guiGufw.py:1100
+msgid "Do you want to continue?"
+msgstr "Deseja continuar?"
+
+#: view/guiGufw.py:1101
+msgid "Reset Firewall"
+msgstr "Retornar o Firewall ao Padrão"
+
+#: view/guiGufw.py:1110
+msgid "Removed rules and reset firewall!"
+msgstr "Regras removidas e firewall no padrão!"
+
+#: view/guiGufw.py:1169 view/guiGufw.py:1171
+msgid " on "
+msgstr " em "
+
+#: view/guiGufw.py:1201 ui/main.glade:71
+msgid "Firewall"
+msgstr "Firewall"
+
+#: ui/add.glade:12
+msgid "Firewall: Add Rule"
+msgstr "Firewall: Adicionar Regra"
+
+#: ui/add.glade:28
+msgid "Show extended actions"
+msgstr "Exibir ações estendidas"
+
+#: ui/add.glade:130 ui/add.glade:131 ui/add.glade:423 ui/add.glade:424
+#: ui/add.glade:690 ui/add.glade:691
+msgid "Rule number to insert"
+msgstr "Inserir número da regra"
+
+#: ui/add.glade:407
+msgid "Preconfigured"
+msgstr "Pré-configurado"
+
+#: ui/add.glade:673
+msgid "Simple"
+msgstr "Simples"
+
+#: ui/add.glade:786
+msgid "To:"
+msgstr "Para:"
+
+#: ui/add.glade:800
+msgid "From:"
+msgstr "De:"
+
+#: ui/add.glade:849 ui/add.glade:850 ui/add.glade:868 ui/add.glade:869
+msgid "Use PortA:PortB for a port range."
+msgstr "Use PortaA:PortaB para um intervalo de portas."
+
+#: ui/add.glade:888 ui/add.glade:889
+msgid "Clean values in boxes"
+msgstr "Limpar os valores nos campos"
+
+#: ui/add.glade:1066
+msgid "Advanced"
+msgstr "Avançado"
+
+#: ui/extra_translations_no_distribute.glade:17
+msgid "ALLOW IN"
+msgstr "PERMITE ENTRADA"
+
+#: ui/extra_translations_no_distribute.glade:24
+msgid "DENY IN"
+msgstr "NEGA ENTRADA"
+
+#: ui/extra_translations_no_distribute.glade:35
+msgid "REJECT IN"
+msgstr "REJEITA ENTRADA"
+
+#: ui/extra_translations_no_distribute.glade:46
+msgid "LIMIT IN"
+msgstr "LIMITA ENTRADA"
+
+#: ui/extra_translations_no_distribute.glade:57
+msgid "ALLOW OUT"
+msgstr "PERMITE SAIDA"
+
+#: ui/extra_translations_no_distribute.glade:68
+msgid "DENY OUT"
+msgstr "NEGA SAIDA"
+
+#: ui/extra_translations_no_distribute.glade:81
+msgid "REJECT OUT"
+msgstr "REJEITA SAIDA"
+
+#: ui/extra_translations_no_distribute.glade:94
+msgid "LIMIT OUT"
+msgstr "LIMITA SAIDA"
+
+#: ui/extra_translations_no_distribute.glade:107
+msgid "ALLOW"
+msgstr "PERMITIR"
+
+#: ui/extra_translations_no_distribute.glade:118
+msgid "DENY"
+msgstr "NEGAR"
+
+#: ui/extra_translations_no_distribute.glade:131
+msgid "REJECT"
+msgstr "REJEITAR"
+
+#: ui/extra_translations_no_distribute.glade:144
+msgid "LIMIT"
+msgstr "LIMITE"
+
+#: ui/extra_translations_no_distribute.glade:160
+msgid "Anywhere"
+msgstr "Qualquer lugar"
+
+#: ui/log.glade:7
+msgid "Firewall: Log"
+msgstr "Firewall: Registro"
+
+#: ui/log.glade:25
+msgid "Show as server script"
+msgstr "Mostrar como script de servidor"
+
+#: ui/log.glade:30
+msgid "Show in a simpler format that can be used for scripting"
+msgstr ""
+"Mostrar em um formato mais simples que pode ser usado ​​para criação de "
+"scripts"
+
+#: ui/log.glade:49
+msgid "Remove all Gufw logs"
+msgstr "Remover todos os logs Gufw"
+
+#: ui/main.glade:87
+msgid "_File"
+msgstr "_Arquivo"
+
+#: ui/main.glade:95
+msgid "_Log..."
+msgstr "_Log..."
+
+#: ui/main.glade:132
+msgid "_Edit"
+msgstr "_Editar"
+
+#: ui/main.glade:140
+msgid "_Add Rule..."
+msgstr "_Adicionar Regra..."
+
+#: ui/main.glade:153
+msgid "Re_move Rule"
+msgstr "Re_mover Regra"
+
+#: ui/main.glade:174
+msgid "Re_load Rules"
+msgstr "Atua_lizar regras"
+
+#: ui/main.glade:188
+msgid "Re_set Firewall..."
+msgstr "Re_iniciar Firewall..."
+
+#: ui/main.glade:228
+msgid "_Help"
+msgstr "Aj_uda"
+
+#: ui/main.glade:236
+msgid "Documentation..."
+msgstr "Documentação..."
+
+#: ui/main.glade:256
+msgid "Get Help Online..."
+msgstr "Obter ajuda online..."
+
+#: ui/main.glade:268
+msgid "Report a Problem..."
+msgstr "Relatar um problema..."
+
+#: ui/main.glade:280
+msgid "Translate this Application..."
+msgstr "Traduzir este aplicativo..."
+
+#: ui/main.glade:401
+msgid "Add a rule..."
+msgstr "Adicionar uma regra..."
+
+#: ui/main.glade:403
+msgid "Add"
+msgstr "Adicionar"
+
+#: ui/main.glade:419
+msgid "Remove the selected rule(s)"
+msgstr "Remover a(s) regra(s) selecionada(s)"
+
+#: ui/main.glade:421
+msgid "Remove"
+msgstr "Remover"
+
+#: ui/main.glade:458
+msgid "Unlock the firewall"
+msgstr "Desbloquear o firewall"
+
+#: ui/main.glade:472
+msgid "Unlock"
+msgstr "Desbloquear"
+
+#: ui/main.glade:504
+msgid "<b>Rules</b>"
+msgstr "<b>Regras</b>"
+
+#: ui/main.glade:559
+msgid "<b>Listening Report</b>"
+msgstr "<b>Relatório de Escuta</b>"
+
+#: ui/main.glade:601
+msgid "Outgoing:"
+msgstr "Saída:"
+
+#: ui/main.glade:615
+msgid "Incoming:"
+msgstr "Entrada:"
+
+#: ui/main.glade:667
+msgid "Status"
+msgstr "Estado"
+
+#: ui/main.glade:699
+msgid "<b>Firewall</b>"
+msgstr "<b>Firewall</b>"
+
+#: ui/preferences.glade:8
+msgid "Firewall: Preferences"
+msgstr "Firewall: Preferências"
+
+#: ui/preferences.glade:74
+msgid "Logging:"
+msgstr "Registro:"
+
+#: ui/preferences.glade:132
+msgid "<b>ufw Options</b>"
+msgstr "<b>Opções do ufw</b>"
+
+#: ui/preferences.glade:163
+msgid "Logging"
+msgstr "Registro"
+
+#: ui/preferences.glade:181
+msgid "Listening Report"
+msgstr "Relatório de escuta"
+
+#: ui/preferences.glade:186
+msgid ""
+"Ports in the listening state for TCP and open state for UDP.\n"
+"If enabled, will result in higher CPU usage."
+msgstr ""
+"Portas no estado de escuta para TCP e em estado aberto para UDP.\n"
+"Se ativado, vai resultar em maior utilização de CPU."
+
+#: ui/preferences.glade:202
+msgid "Show notifications"
+msgstr "Exibir notificações"
+
+#: ui/preferences.glade:207
+msgid "Show notifications for new connections in Listening Report"
+msgstr "Mostrar notificações para novas conexões em Relatório de Escuta."
+
+#: ui/preferences.glade:246
+msgid "<b>Gufw Options</b>"
+msgstr "<b>Opções do Gufw</b>"
+
+#~ msgid "Firewall Configuration"
+#~ msgstr "Configuração do Firewall"

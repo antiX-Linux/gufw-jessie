@@ -1,0 +1,83 @@
+.TH gufw 8 "13 Feb 2011"
+
+.SH NAME
+Gufw \- Graphic user interface for managing ufw
+.PP
+.SH DESCRIPTION
+Gufw is an easy to use Ubuntu / Linux firewall, powered by ufw.
+
+Gufw is an easy, intuitive, way to manage your Ubuntu firewall. It supports common tasks such as allowing or blocking pre-configured, common p2p, or individual ports port(s), and many others! Gufw is powered by ufw.
+Introduction
+iptables is already a very powerful tool by itself, but it's syntax can get awkward at times and hard to figure out, so Ubuntu developers decided to make ufw ("The reason ufw was developed is that we wanted to create a server-level firewalling utility that was a little bit more for `human beings`"), which was to be simpler. Now, on the graphical side of things, Firestarer already existed. But why not make an even easier to use GUI for desktop `human beings`, powered by ufw? This is where Gufw comes in.
+
+.SH RUN
+.TP
+You can run Gufw in GNOME menu: /System/Administration/Firewall configuration
+
+.SH "USAGE"
+.SH BASIC SETTINGS
+.PP
+Gufw has two states: Enabled and disabled.
+When Gufw is enabled, you can allow/reject/deny all incoming and outgoing connections.
+
+.SH ADD PRECONFIGURED RULE(S)
+.PP
+You can select between more Programs and Services preconfigured.
+Once Program/Service can have multiples rules.
+
+.SH ADD SIMPLE RULE(S)
+.PP
+You can specify the port or service, and protocol to be allowed (allow traffic), reject (reject traffic without reply), denied (deny traffic with reply), limit (limit traffic) on the host, or limit an IP or Port (Protecting against brute-force login attacks).
+The port can be a number of 5 digits, from 1 to 65535.
+The service can be any of /etc/services file (By example tcpmux, echo, discard, systat...).
+The protocol can be:
+   1. TCP: Apply rule for all traffic in protocol TCP.
+   2. UDP: Apply rule for all traffic in protocol UDP.
+   3. both: Apply rule for all traffic in protocol TCP and UDP.
+   
+.SH ADD ADVANCED RULE(S)
+.PP
+You can add an advanced rule.
+You can specify:
+   1. Protocol: TCP, UDP or both.
+   2. From IP Addres: You can allow/deny/reject/limit traffic from IP address. Example for a range: 192.168.1.0/9
+   3. From Port: You can allow/deny/reject/limit traffic from a port. This parameter is optional. The port can be a number of 5 digits, from 1 to 65535. You can use a range ports with this format port1:port2 (by example 3234:3237), or add multiple ports with port1,port2 (by example 3234,3254).
+   4. To IP Addres: You can allow/deny/limit traffic to an IP address. This parameter is optional. Example for a range: 192.168.1.0/9
+   5. To Port: You can allow/deny/reject/limit traffic to a Port. This parameter is optional. The port can be a number of 5 digits, from 1 to 65535. You can use a range ports with this format port1:port2 (by example 3234:3237).
+
+.SH GENERAL TO PRECONFIGURED / SIMPLE / ADVANCED
+.PP
+With the extended parameters you can:
+   1. Insert a rule in a specific row.
+   2. Set the log level for ufw.
+
+.SH REMOVE ONE RULE
+.PP
+Steps:
+   1. Select a rule in the list.
+   2. Click in Remove button.
+You can delete more rules if you select it.
+
+.SH RESET CONFIGURATION
+.PP
+You will remove all rules and reset the ufw configuration to intial status (disable)!
+
+.SH EDIT PREFERENCES
+.PP
+You can edit your preferences in /Edit/Preferences menu.
+Preferences:
+   1. Gufw log: Gufw will register all commands sent to ufw.
+   2. ufw log: Enable/disable and set the level of the ufw log.
+   3. Listening Report: Will display the ports on the live system in the listening state for TCP and the open state for UDP.
+   4. Notification popups: Gufw will notify the new connections in the Listening Report.
+
+.SH SEE ALSO
+.PP
+\fBufw\fR(8)
+
+.SH AUTHOR
+.PP
+Gufw is (C) 2008-2011, Marcos Alvarez Costales <https://launchpad.net/~costales>.
+
+.PP
+This manual page was originally written by Marcos Alvarez Costales <https://launchpad.net/~costales>.

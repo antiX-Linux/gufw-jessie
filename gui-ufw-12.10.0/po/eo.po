@@ -1,0 +1,433 @@
+# Esperanto translation for gui-ufw
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the gui-ufw package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gui-ufw\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2012-05-03 10:05+0200\n"
+"PO-Revision-Date: 2012-05-02 19:40+0000\n"
+"Last-Translator: Michael Moroni <michael.moroni@mailoo.org>\n"
+"Language-Team: Esperanto <eo@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-06-09 08:00+0000\n"
+"X-Generator: Launchpad (build 15376)\n"
+
+#: view/guiGufw.py:137
+msgid "To"
+msgstr "Al"
+
+#: view/guiGufw.py:141
+msgid "Action"
+msgstr "Ago"
+
+#: view/guiGufw.py:145
+msgid "From"
+msgstr "De"
+
+#: view/guiGufw.py:156
+msgid "Protocol"
+msgstr "Protokolo"
+
+#: view/guiGufw.py:159
+msgid "Port"
+msgstr "Konektejo"
+
+#: view/guiGufw.py:162
+msgid "Address"
+msgstr "Adreso"
+
+#: view/guiGufw.py:165
+msgid "Application"
+msgstr "Aplikaĵo"
+
+#: view/guiGufw.py:445
+msgid "Select rule(s)"
+msgstr "Elekti regulo(j)n"
+
+#: view/guiGufw.py:460
+msgid "Removing rules..."
+msgstr "Foriganta regulojn..."
+
+#: view/guiGufw.py:488
+msgid "Rule(s) removed"
+msgstr "Regulo(j) forigita(j)"
+
+#: view/guiGufw.py:490 view/guiGufw.py:567 view/guiGufw.py:605
+#: view/guiGufw.py:670 view/guiGufw.py:731
+msgid "Error performing operation"
+msgstr "Eraro dum efektivigado de ago"
+
+#: view/guiGufw.py:565 view/guiGufw.py:603 view/guiGufw.py:668
+#: view/guiGufw.py:729
+msgid "Rule added"
+msgstr "Regulo aldonita"
+
+#: view/guiGufw.py:658
+msgid "Error: Insert a port number"
+msgstr "Eraro: Enmetu konektejnombron"
+
+#: view/guiGufw.py:662 view/guiGufw.py:720 view/guiGufw.py:724
+msgid "Error: Range ports only with tcp or udp protocol"
+msgstr "Eraro: Variejaj konektejoj nur kun TCP- aŭ UDP-protokoloj"
+
+#: view/guiGufw.py:716
+msgid "Error: Fields filled out incorrectly"
+msgstr "Eraro: kampoj malĝuste plenigitaj"
+
+#: view/guiGufw.py:810
+msgid "Wrong identification"
+msgstr "Malĝusta identigilo"
+
+#: view/guiGufw.py:936
+msgid "Enabled firewall"
+msgstr "Enŝalti fajroŝirmilon"
+
+#: view/guiGufw.py:941
+msgid "Disabled firewall"
+msgstr "Fajroŝirmilo malŝaltita"
+
+#: view/guiGufw.py:955
+msgid "Deny all INCOMING traffic"
+msgstr "Malpermesi ĉian ENIRANTAN trafikon"
+
+#: view/guiGufw.py:959
+msgid "Reject all INCOMING traffic"
+msgstr "Malakcepti ĉian ENIRANTAN trafikon"
+
+#: view/guiGufw.py:963
+msgid "Allow all INCOMING traffic"
+msgstr "Permesi tutan ENIRANTAN trafikon"
+
+#: view/guiGufw.py:977
+msgid "Deny all OUTGOING traffic"
+msgstr "Malpermesi tutan ELIRANTAN trafikon"
+
+#: view/guiGufw.py:981
+msgid "Reject all OUTGOING traffic"
+msgstr "Malakcepti tutan ELIRANTAN trafikon"
+
+#: view/guiGufw.py:985
+msgid "Allow all OUTGOING traffic"
+msgstr "Permesi tutan ELIRANTAN trafikon"
+
+#: view/guiGufw.py:1031
+msgid ""
+"© 2008-2012 The Gufw Project\n"
+"Shield logo © 2007 Michael Spiegel"
+msgstr ""
+
+#: view/guiGufw.py:1032
+msgid "Graphical user interface for ufw"
+msgstr "Grafika uz-interfaco por ufw"
+
+#: view/guiGufw.py:1035
+msgid ""
+"Lead developer:\n"
+"Marcos Alvarez Costales https://launchpad.net/~costales\n"
+"\n"
+"Developers (in alphabetical order):\n"
+"David Planella https://launchpad.net/~dpm\n"
+"Emilio López https://launchpad.net/~turl\n"
+"Giacomo Picchiarelli https://launchpad.net/~gpicchiarelli\n"
+"Jeremy Bicha https://launchpad.net/~jbicha\n"
+"Raúl Soriano https://launchpad.net/~gatoloko\n"
+"Rogério Vicente https://launchpad.net/~rogeriopvl\n"
+"Rubén Megido https://launchpad.net/~runoo\n"
+"Vadim Peretokin https://launchpad.net/~vperetokin\n"
+"\n"
+"Contributors:\n"
+"Cedrick Hannier https://launchpad.net/~cedynamix\n"
+"\n"
+"MOTU\n"
+"Devid Antonio Filoni https://launchpad.net/~d.filoni"
+msgstr ""
+
+#: view/guiGufw.py:1053
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Aisano https://launchpad.net/~info-ais-sanmarino\n"
+"  Michael Moroni https://launchpad.net/~airon90"
+
+#: view/guiGufw.py:1054
+msgid "Shield logo by myke http://michael.spiegel1.at/"
+msgstr ""
+
+#: view/guiGufw.py:1092
+msgid "Reloaded ufw rules"
+msgstr "Reŝargitaj ufw-reguloj"
+
+#: view/guiGufw.py:1099
+msgid "This will remove all rules and disable the firewall!"
+msgstr "Ĉi tio forigos ĉiujn regulojn kaj malŝaltos la fajroŝirmilon"
+
+#: view/guiGufw.py:1100
+msgid "Do you want to continue?"
+msgstr "Ĉu vi volas daŭrigi?"
+
+#: view/guiGufw.py:1101
+msgid "Reset Firewall"
+msgstr "Reŝargi fajroŝirmilon"
+
+#: view/guiGufw.py:1110
+msgid "Removed rules and reset firewall!"
+msgstr "Reguloj forigitaj kaj fajroŝirmilo reŝargita!"
+
+#: view/guiGufw.py:1169 view/guiGufw.py:1171
+msgid " on "
+msgstr " en "
+
+#: view/guiGufw.py:1201 ui/main.glade:71
+msgid "Firewall"
+msgstr "Fajroŝirmilo"
+
+#: ui/add.glade:12
+msgid "Firewall: Add Rule"
+msgstr "Fajroŝirmilo: Aldoni regulon"
+
+#: ui/add.glade:28
+msgid "Show extended actions"
+msgstr "Montri etenditajn agojn"
+
+#: ui/add.glade:130 ui/add.glade:131 ui/add.glade:423 ui/add.glade:424
+#: ui/add.glade:690 ui/add.glade:691
+msgid "Rule number to insert"
+msgstr ""
+
+#: ui/add.glade:407
+msgid "Preconfigured"
+msgstr "Apriore agordita"
+
+#: ui/add.glade:673
+msgid "Simple"
+msgstr "Simpla"
+
+#: ui/add.glade:786
+msgid "To:"
+msgstr "Al:"
+
+#: ui/add.glade:800
+msgid "From:"
+msgstr "De:"
+
+#: ui/add.glade:849 ui/add.glade:850 ui/add.glade:868 ui/add.glade:869
+msgid "Use PortA:PortB for a port range."
+msgstr ""
+
+#: ui/add.glade:888 ui/add.glade:889
+msgid "Clean values in boxes"
+msgstr "Vakigi valorojn en kestoj"
+
+#: ui/add.glade:1066
+msgid "Advanced"
+msgstr "Sperta"
+
+#: ui/extra_translations_no_distribute.glade:17
+msgid "ALLOW IN"
+msgstr "PERMESI EN"
+
+#: ui/extra_translations_no_distribute.glade:24
+msgid "DENY IN"
+msgstr "MALPERMESI EN"
+
+#: ui/extra_translations_no_distribute.glade:35
+msgid "REJECT IN"
+msgstr "MALAKCEPTI EN"
+
+#: ui/extra_translations_no_distribute.glade:46
+msgid "LIMIT IN"
+msgstr "LIMIGI EN"
+
+#: ui/extra_translations_no_distribute.glade:57
+msgid "ALLOW OUT"
+msgstr "PERMESI EL"
+
+#: ui/extra_translations_no_distribute.glade:68
+msgid "DENY OUT"
+msgstr "MALPERMESI EL"
+
+#: ui/extra_translations_no_distribute.glade:81
+msgid "REJECT OUT"
+msgstr "MALAKCEPTI EL"
+
+#: ui/extra_translations_no_distribute.glade:94
+msgid "LIMIT OUT"
+msgstr "LIMIGI EL"
+
+#: ui/extra_translations_no_distribute.glade:107
+msgid "ALLOW"
+msgstr "PERMESI"
+
+#: ui/extra_translations_no_distribute.glade:118
+msgid "DENY"
+msgstr "MALPERMESI"
+
+#: ui/extra_translations_no_distribute.glade:131
+msgid "REJECT"
+msgstr "MALAKCEPTI"
+
+#: ui/extra_translations_no_distribute.glade:144
+msgid "LIMIT"
+msgstr "LIMIGI"
+
+#: ui/extra_translations_no_distribute.glade:160
+msgid "Anywhere"
+msgstr "Ĉie"
+
+#: ui/log.glade:7
+msgid "Firewall: Log"
+msgstr "Fajroŝirmilo: Protokolo"
+
+#: ui/log.glade:25
+msgid "Show as server script"
+msgstr ""
+
+#: ui/log.glade:30
+msgid "Show in a simpler format that can be used for scripting"
+msgstr ""
+
+#: ui/log.glade:49
+msgid "Remove all Gufw logs"
+msgstr ""
+
+#: ui/main.glade:87
+msgid "_File"
+msgstr "_Dosiero"
+
+#: ui/main.glade:95
+msgid "_Log..."
+msgstr ""
+
+#: ui/main.glade:132
+msgid "_Edit"
+msgstr "R_edakti"
+
+#: ui/main.glade:140
+msgid "_Add Rule..."
+msgstr "_Aldoni regulon..."
+
+#: ui/main.glade:153
+msgid "Re_move Rule"
+msgstr ""
+
+#: ui/main.glade:174
+msgid "Re_load Rules"
+msgstr ""
+
+#: ui/main.glade:188
+msgid "Re_set Firewall..."
+msgstr ""
+
+#: ui/main.glade:228
+msgid "_Help"
+msgstr "_Helpo"
+
+#: ui/main.glade:236
+msgid "Documentation..."
+msgstr "Dokumentado..."
+
+#: ui/main.glade:256
+msgid "Get Help Online..."
+msgstr "Akiri retan helpon..."
+
+#: ui/main.glade:268
+msgid "Report a Problem..."
+msgstr "Raporti problemon…"
+
+#: ui/main.glade:280
+msgid "Translate this Application..."
+msgstr ""
+
+#: ui/main.glade:401
+msgid "Add a rule..."
+msgstr ""
+
+#: ui/main.glade:403
+msgid "Add"
+msgstr ""
+
+#: ui/main.glade:419
+msgid "Remove the selected rule(s)"
+msgstr ""
+
+#: ui/main.glade:421
+msgid "Remove"
+msgstr ""
+
+#: ui/main.glade:458
+msgid "Unlock the firewall"
+msgstr ""
+
+#: ui/main.glade:472
+msgid "Unlock"
+msgstr ""
+
+#: ui/main.glade:504
+msgid "<b>Rules</b>"
+msgstr "<b>Reguloj</b>"
+
+#: ui/main.glade:559
+msgid "<b>Listening Report</b>"
+msgstr "<b>Aŭskultanta raporto</b>"
+
+#: ui/main.glade:601
+msgid "Outgoing:"
+msgstr "Eliranta:"
+
+#: ui/main.glade:615
+msgid "Incoming:"
+msgstr "Eniranta:"
+
+#: ui/main.glade:667
+msgid "Status"
+msgstr ""
+
+#: ui/main.glade:699
+msgid "<b>Firewall</b>"
+msgstr ""
+
+#: ui/preferences.glade:8
+msgid "Firewall: Preferences"
+msgstr "Fajroŝirmilo: Agordoj"
+
+#: ui/preferences.glade:74
+msgid "Logging:"
+msgstr "Protokolado:"
+
+#: ui/preferences.glade:132
+msgid "<b>ufw Options</b>"
+msgstr "<b>Agordoj de ufw</b>"
+
+#: ui/preferences.glade:163
+msgid "Logging"
+msgstr "Protokolanta"
+
+#: ui/preferences.glade:181
+msgid "Listening Report"
+msgstr "Aŭskultanta raporto"
+
+#: ui/preferences.glade:186
+msgid ""
+"Ports in the listening state for TCP and open state for UDP.\n"
+"If enabled, will result in higher CPU usage."
+msgstr ""
+
+#: ui/preferences.glade:202
+msgid "Show notifications"
+msgstr "Montri sciigojn"
+
+#: ui/preferences.glade:207
+msgid "Show notifications for new connections in Listening Report"
+msgstr ""
+
+#: ui/preferences.glade:246
+msgid "<b>Gufw Options</b>"
+msgstr "<b>Agordoj de Gufw</b>"
+
+#~ msgid "Firewall Configuration"
+#~ msgstr "Fajroŝirmilaj agordoj"

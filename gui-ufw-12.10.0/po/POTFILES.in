@@ -1,0 +1,10 @@
+# intltool-update -p -g gufw 
+# also done automatically with setup.py build or install
+[encoding: UTF-8]
+[type: gettext/xml]gufw/daemon/gufw.daemon.policy.in
+gufw/view/guiGufw.py
+[type: gettext/glade]data/ui/add.ui
+[type: gettext/glade]data/ui/extra_translations_no_distribute.ui
+[type: gettext/glade]data/ui/log.ui
+[type: gettext/glade]data/ui/main.ui
+[type: gettext/glade]data/ui/preferences.ui

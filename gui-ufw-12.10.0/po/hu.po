@@ -1,0 +1,445 @@
+# Hungarian translation for gui-ufw
+# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
+# This file is distributed under the same license as the gui-ufw package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gui-ufw\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2012-05-03 10:05+0200\n"
+"PO-Revision-Date: 2012-05-02 19:39+0000\n"
+"Last-Translator: Sümegi Csaba <sumegics@gmail.com>\n"
+"Language-Team: Hungarian <hu@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-06-09 08:01+0000\n"
+"X-Generator: Launchpad (build 15376)\n"
+
+#: view/guiGufw.py:137
+msgid "To"
+msgstr "Ide"
+
+#: view/guiGufw.py:141
+msgid "Action"
+msgstr "Művelet"
+
+#: view/guiGufw.py:145
+msgid "From"
+msgstr "Innen"
+
+#: view/guiGufw.py:156
+msgid "Protocol"
+msgstr "Protokoll"
+
+#: view/guiGufw.py:159
+msgid "Port"
+msgstr "Port"
+
+#: view/guiGufw.py:162
+msgid "Address"
+msgstr "Cím"
+
+#: view/guiGufw.py:165
+msgid "Application"
+msgstr "Alkalmazás"
+
+#: view/guiGufw.py:445
+msgid "Select rule(s)"
+msgstr "Válasszon szabályokat"
+
+#: view/guiGufw.py:460
+msgid "Removing rules..."
+msgstr "Szabályok eltávolítása..."
+
+#: view/guiGufw.py:488
+msgid "Rule(s) removed"
+msgstr "Szabály(ok) eltávolítva"
+
+#: view/guiGufw.py:490 view/guiGufw.py:567 view/guiGufw.py:605
+#: view/guiGufw.py:670 view/guiGufw.py:731
+msgid "Error performing operation"
+msgstr "Hiba a művelet végrehajtása közben"
+
+#: view/guiGufw.py:565 view/guiGufw.py:603 view/guiGufw.py:668
+#: view/guiGufw.py:729
+msgid "Rule added"
+msgstr "Szabály hozzáadva"
+
+#: view/guiGufw.py:658
+msgid "Error: Insert a port number"
+msgstr "Hiba: Adjon meg egy portszámot"
+
+#: view/guiGufw.py:662 view/guiGufw.py:720 view/guiGufw.py:724
+msgid "Error: Range ports only with tcp or udp protocol"
+msgstr "Hiba: Porttartományok csak tcp-vel vagy udp-vel használhatók"
+
+#: view/guiGufw.py:716
+msgid "Error: Fields filled out incorrectly"
+msgstr "Hiba: A mezők hibásan lettek kitöltve"
+
+#: view/guiGufw.py:810
+msgid "Wrong identification"
+msgstr "Hibás azonosítás"
+
+#: view/guiGufw.py:936
+msgid "Enabled firewall"
+msgstr "Tűzfal engedélyezve"
+
+#: view/guiGufw.py:941
+msgid "Disabled firewall"
+msgstr "Tűzfal letiltva"
+
+#: view/guiGufw.py:955
+msgid "Deny all INCOMING traffic"
+msgstr "Minden BEJÖVŐ forgalom megtagadása"
+
+#: view/guiGufw.py:959
+msgid "Reject all INCOMING traffic"
+msgstr "Minden BEJÖVŐ forgalom visszautasítása"
+
+#: view/guiGufw.py:963
+msgid "Allow all INCOMING traffic"
+msgstr "Minden BEJÖVŐ forgalom engedélyezése"
+
+#: view/guiGufw.py:977
+msgid "Deny all OUTGOING traffic"
+msgstr "Minden KIMENŐ forgalom megtagadása"
+
+#: view/guiGufw.py:981
+msgid "Reject all OUTGOING traffic"
+msgstr "Minden KIMENŐ forgalom visszautasítása"
+
+#: view/guiGufw.py:985
+msgid "Allow all OUTGOING traffic"
+msgstr "Minden KIMENŐ forgalom engedélyezése"
+
+#: view/guiGufw.py:1031
+msgid ""
+"© 2008-2012 The Gufw Project\n"
+"Shield logo © 2007 Michael Spiegel"
+msgstr ""
+
+#: view/guiGufw.py:1032
+msgid "Graphical user interface for ufw"
+msgstr "Grafikus felhasználói felület az ufw-hez"
+
+#: view/guiGufw.py:1035
+msgid ""
+"Lead developer:\n"
+"Marcos Alvarez Costales https://launchpad.net/~costales\n"
+"\n"
+"Developers (in alphabetical order):\n"
+"David Planella https://launchpad.net/~dpm\n"
+"Emilio López https://launchpad.net/~turl\n"
+"Giacomo Picchiarelli https://launchpad.net/~gpicchiarelli\n"
+"Jeremy Bicha https://launchpad.net/~jbicha\n"
+"Raúl Soriano https://launchpad.net/~gatoloko\n"
+"Rogério Vicente https://launchpad.net/~rogeriopvl\n"
+"Rubén Megido https://launchpad.net/~runoo\n"
+"Vadim Peretokin https://launchpad.net/~vperetokin\n"
+"\n"
+"Contributors:\n"
+"Cedrick Hannier https://launchpad.net/~cedynamix\n"
+"\n"
+"MOTU\n"
+"Devid Antonio Filoni https://launchpad.net/~d.filoni"
+msgstr ""
+
+#: view/guiGufw.py:1053
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Balázs Kisterenyei https://launchpad.net/~moltenice80\n"
+"  Freeman07 https://launchpad.net/~csatarij\n"
+"  G. U. https://launchpad.net/~gergo86\n"
+"  Gabor Kelemen https://launchpad.net/~kelemeng\n"
+"  Gergely Szarka https://launchpad.net/~gszarka\n"
+"  HORVATH, Akos https://launchpad.net/~akos-horvath\n"
+"  Krasznecz Zoltán https://launchpad.net/~krasznecz-zoltan\n"
+"  Sümegi Csaba https://launchpad.net/~sumegics\n"
+"  Zoltan https://launchpad.net/~nemethzotya78\n"
+"  ifj. Kálmán Tarnay https://launchpad.net/~kalmisoft\n"
+"  zs.dani1@gmail.com https://launchpad.net/~zs-dani1"
+
+#: view/guiGufw.py:1054
+msgid "Shield logo by myke http://michael.spiegel1.at/"
+msgstr ""
+
+#: view/guiGufw.py:1092
+msgid "Reloaded ufw rules"
+msgstr "Az ufw szabályai újratöltve"
+
+#: view/guiGufw.py:1099
+msgid "This will remove all rules and disable the firewall!"
+msgstr "Ez eltávolítja az összes szabályt és letiltja a tűzfalat!"
+
+#: view/guiGufw.py:1100
+msgid "Do you want to continue?"
+msgstr "Folytatja?"
+
+#: view/guiGufw.py:1101
+msgid "Reset Firewall"
+msgstr "Tűzfal visszaállítása"
+
+#: view/guiGufw.py:1110
+msgid "Removed rules and reset firewall!"
+msgstr "Szabályok eltávolítva és a tűzfal visszaállítva!"
+
+#: view/guiGufw.py:1169 view/guiGufw.py:1171
+msgid " on "
+msgstr " be "
+
+#: view/guiGufw.py:1201 ui/main.glade:71
+msgid "Firewall"
+msgstr "Tűzfal"
+
+#: ui/add.glade:12
+msgid "Firewall: Add Rule"
+msgstr "Tűzfal: Szabály hozzáadása"
+
+#: ui/add.glade:28
+msgid "Show extended actions"
+msgstr "Részletes beállítási lehetőségek"
+
+#: ui/add.glade:130 ui/add.glade:131 ui/add.glade:423 ui/add.glade:424
+#: ui/add.glade:690 ui/add.glade:691
+msgid "Rule number to insert"
+msgstr "A beszúrandó szabály sorszáma"
+
+#: ui/add.glade:407
+msgid "Preconfigured"
+msgstr "Előre beállított"
+
+#: ui/add.glade:673
+msgid "Simple"
+msgstr "Egyszerű"
+
+#: ui/add.glade:786
+msgid "To:"
+msgstr "Ide:"
+
+#: ui/add.glade:800
+msgid "From:"
+msgstr "Innen:"
+
+#: ui/add.glade:849 ui/add.glade:850 ui/add.glade:868 ui/add.glade:869
+msgid "Use PortA:PortB for a port range."
+msgstr "Porttartomány megadása: A-port:B-port"
+
+#: ui/add.glade:888 ui/add.glade:889
+msgid "Clean values in boxes"
+msgstr "Mezőértékek törlése"
+
+#: ui/add.glade:1066
+msgid "Advanced"
+msgstr "Speciális"
+
+#: ui/extra_translations_no_distribute.glade:17
+msgid "ALLOW IN"
+msgstr "ENGEDÉLYEZÉS BE"
+
+#: ui/extra_translations_no_distribute.glade:24
+msgid "DENY IN"
+msgstr "MEGTAGADÁS BE"
+
+#: ui/extra_translations_no_distribute.glade:35
+msgid "REJECT IN"
+msgstr "VISSZAUTASÍTÁS BE"
+
+#: ui/extra_translations_no_distribute.glade:46
+msgid "LIMIT IN"
+msgstr "KORLÁTOZÁS BE"
+
+#: ui/extra_translations_no_distribute.glade:57
+msgid "ALLOW OUT"
+msgstr "ENGEDÉLYEZÉS KI"
+
+#: ui/extra_translations_no_distribute.glade:68
+msgid "DENY OUT"
+msgstr "MEGTAGADÁS KI"
+
+#: ui/extra_translations_no_distribute.glade:81
+msgid "REJECT OUT"
+msgstr "VISSZAUTASÍTÁS KI"
+
+#: ui/extra_translations_no_distribute.glade:94
+msgid "LIMIT OUT"
+msgstr "KORLÁTOZÁS KI"
+
+#: ui/extra_translations_no_distribute.glade:107
+msgid "ALLOW"
+msgstr "ENGEDÉLYEZÉS"
+
+#: ui/extra_translations_no_distribute.glade:118
+msgid "DENY"
+msgstr "MEGTAGADÁS"
+
+#: ui/extra_translations_no_distribute.glade:131
+msgid "REJECT"
+msgstr "VISSZAUTASÍTÁS"
+
+#: ui/extra_translations_no_distribute.glade:144
+msgid "LIMIT"
+msgstr "KORLÁTOZÁS"
+
+#: ui/extra_translations_no_distribute.glade:160
+msgid "Anywhere"
+msgstr "Bárhol"
+
+#: ui/log.glade:7
+msgid "Firewall: Log"
+msgstr "Tűzfal: Napló"
+
+#: ui/log.glade:25
+msgid "Show as server script"
+msgstr "Megjelenítés kiszolgáló-parancsfájlként"
+
+#: ui/log.glade:30
+msgid "Show in a simpler format that can be used for scripting"
+msgstr ""
+"Megjelenítés egyszerűbb formátumban, parancsfájlokban való használathoz"
+
+#: ui/log.glade:49
+msgid "Remove all Gufw logs"
+msgstr "A Gufw összes naplójának eltávolítása"
+
+#: ui/main.glade:87
+msgid "_File"
+msgstr "_Fájl"
+
+#: ui/main.glade:95
+msgid "_Log..."
+msgstr "_Napló…"
+
+#: ui/main.glade:132
+msgid "_Edit"
+msgstr "S_zerkesztés"
+
+#: ui/main.glade:140
+msgid "_Add Rule..."
+msgstr "Szabály _hozzáadása…"
+
+#: ui/main.glade:153
+msgid "Re_move Rule"
+msgstr "Szabály _eltávolítása"
+
+#: ui/main.glade:174
+msgid "Re_load Rules"
+msgstr ""
+
+#: ui/main.glade:188
+msgid "Re_set Firewall..."
+msgstr "Tűzfal _visszaállítása…"
+
+#: ui/main.glade:228
+msgid "_Help"
+msgstr "_Súgó"
+
+#: ui/main.glade:236
+msgid "Documentation..."
+msgstr "Dokumentáció…"
+
+#: ui/main.glade:256
+msgid "Get Help Online..."
+msgstr "Online segítség…"
+
+#: ui/main.glade:268
+msgid "Report a Problem..."
+msgstr "Hiba jelentése…"
+
+#: ui/main.glade:280
+msgid "Translate this Application..."
+msgstr "Ezen alkalmazás fordítása…"
+
+#: ui/main.glade:401
+msgid "Add a rule..."
+msgstr "Szabály hozzáadása…"
+
+#: ui/main.glade:403
+msgid "Add"
+msgstr "Hozzáadás"
+
+#: ui/main.glade:419
+msgid "Remove the selected rule(s)"
+msgstr "A kiválasztott szabály(ok) eltávolítása"
+
+#: ui/main.glade:421
+msgid "Remove"
+msgstr "Eltávolítás"
+
+#: ui/main.glade:458
+msgid "Unlock the firewall"
+msgstr "A tűzfal feloldása"
+
+#: ui/main.glade:472
+msgid "Unlock"
+msgstr ""
+
+#: ui/main.glade:504
+msgid "<b>Rules</b>"
+msgstr "<b>Szabályok</b>"
+
+#: ui/main.glade:559
+msgid "<b>Listening Report</b>"
+msgstr "<b>Portjelentés</b>"
+
+#: ui/main.glade:601
+msgid "Outgoing:"
+msgstr "Kimenő:"
+
+#: ui/main.glade:615
+msgid "Incoming:"
+msgstr "Bejövő:"
+
+#: ui/main.glade:667
+msgid "Status"
+msgstr "Állapot"
+
+#: ui/main.glade:699
+msgid "<b>Firewall</b>"
+msgstr "<b>Tűzfal</b>"
+
+#: ui/preferences.glade:8
+msgid "Firewall: Preferences"
+msgstr "Tűzfal: Beállítások"
+
+#: ui/preferences.glade:74
+msgid "Logging:"
+msgstr "Naplózás:"
+
+#: ui/preferences.glade:132
+msgid "<b>ufw Options</b>"
+msgstr "<b>ufw beállításai</b>"
+
+#: ui/preferences.glade:163
+msgid "Logging"
+msgstr "Naplózás"
+
+#: ui/preferences.glade:181
+msgid "Listening Report"
+msgstr "Portjelentés"
+
+#: ui/preferences.glade:186
+msgid ""
+"Ports in the listening state for TCP and open state for UDP.\n"
+"If enabled, will result in higher CPU usage."
+msgstr ""
+"Figyelő TCP- és nyitott UDP-portok.\n"
+"Engedélyezett állapotban magasabb processzorhasználatot eredményez."
+
+#: ui/preferences.glade:202
+msgid "Show notifications"
+msgstr "Értesítések megjelenítése"
+
+#: ui/preferences.glade:207
+msgid "Show notifications for new connections in Listening Report"
+msgstr "Értesítések megjelenítése az új kapcsolatokról a Portjelentésben"
+
+#: ui/preferences.glade:246
+msgid "<b>Gufw Options</b>"
+msgstr "<b>Gufw beállításai</b>"
+
+#~ msgid "Firewall Configuration"
+#~ msgstr "Tűzfalbeállítás"

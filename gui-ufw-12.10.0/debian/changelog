@@ -1,0 +1,151 @@
+gui-ufw (12.10.0-1) unstable; urgency=low
+
+  * New upstream release (Closes: #653166).
+  * debian/rules: use python2 sequence.
+  * debian/control: add python (>= 2.6.6-3~) and python-distutils-extra to
+    Build-Depends field.
+  * debian/control: remove Build-Depends-Indep field.
+  * debian/control: add gnome-icon-theme-symbolic, gir1.2-gtk-3.0 and
+    gir1.2-polkit-1.0 to Depends field.
+  * debian/control: remove python-gtk2 and python-gnome2 from Depends field.
+  * debian/control: set ufw minimum version to 0.31.1 in Depends field.
+  * debian/{copyright, docs}: update files.
+  * debian/menu: remove file.
+  * debian/rules: replace /usr/bin/gufw upstream script with a new one.
+  * Bump Standards-Version to 3.9.3.
+
+ -- Devid Antonio Filoni <d.filoni@ubuntu.com>  Sun, 10 Jun 2012 05:38:45 +0200
+
+gui-ufw (11.04.2-1) unstable; urgency=low
+
+  * New upstream release (Closes: #584692, #550670).
+  * Switch to format 3.0 (quilt).
+  * debian/rules: add override_dh_auto_clean target to remove generated
+    mo dir.
+  * debian/control: add Python Applications Packaging Team to Uploaders field.
+  * debian/control: add Vcs-Svn and Vcs-Browser fields.
+  * debian/control: remove cdbs from Build-Depends field.
+  * debian/control: add notify-osd | notification-daemon, policykit-1 and
+    python-dbus to Depends field.
+  * debian/control: remove gksu and python-glade2 from Depends field.
+  * Update debian/copyright file.
+  * Remove debian/watch, it does not work anymore.
+  * debian/docs: look for doc files in doc/ path, patch by Alessio Treglia.
+  * Fix unused-override lintian info.
+  * Fix executable-not-elf-or-script lintian warnings.
+  * Bump Standards-Version to 3.9.1.
+
+ -- Devid Antonio Filoni <d.filoni@ubuntu.com>  Fri, 04 Mar 2011 17:34:50 +0100
+
+gui-ufw (9.10.2-1) unstable; urgency=low
+
+  [ Miriam Ruiz ]
+  * Uploaded the package to Debian
+  * Added myself to uploaders
+  * Fixed debian/copyright
+
+ -- Miriam Ruiz <little_miry@yahoo.es>  Thu, 03 Sep 2009 20:08:23 +0200
+
+gui-ufw (9.10.2-0ubuntu1) karmic; urgency=low
+
+  * New upstream release.
+  * debian/control: bump Standards-Version to 3.8.3. 
+
+ -- Devid Antonio Filoni <d.filoni@ubuntu.com>  Sun, 23 Aug 2009 23:12:50 +0200
+
+gui-ufw (9.10.1-0ubuntu1) karmic; urgency=low
+
+  * New upstream release.
+  * debian/control: bump Standards-Version to 3.8.2.
+
+ -- Devid Antonio Filoni <d.filoni@ubuntu.com>  Sun, 26 Jul 2009 14:24:11 +0200
+
+gui-ufw (9.10.0~bzr23-0ubuntu1) karmic; urgency=low
+
+  * New upstream release (LP: #383279).
+  * debian/control: bump Standards-Version to 3.8.1.
+
+ -- Devid Antonio Filoni <d.filoni@ubuntu.com>  Wed, 03 Jun 2009 20:34:27 +0200
+
+gui-ufw (9.04.0-0ubuntu1) karmic; urgency=low
+
+  * New upstream release (LP: #376626, #377024).
+  * Fix debhelper-but-no-misc-depends lintian warning.
+
+ -- Devid Antonio Filoni <d.filoni@ubuntu.com>  Sun, 17 May 2009 17:57:33 +0200
+
+gui-ufw (0.20.7-0ubuntu2) jaunty; urgency=low
+
+  * Install images in the correct dirs.
+
+ -- Devid Antonio Filoni <d.filoni@ubuntu.com>  Sat, 03 Jan 2009 11:54:45 +0100
+
+gui-ufw (0.20.7-0ubuntu1) jaunty; urgency=low
+
+  * New upstream release.
+  * Remove usr/share/pixmaps from debian/dirs.
+  * Add a lintian override for desktop-command-not-in-package lintian warning.
+
+ -- Devid Antonio Filoni <d.filoni@ubuntu.com>  Wed, 31 Dec 2008 23:18:09 +0100
+
+gui-ufw (0.20.6-0ubuntu1) intrepid; urgency=low
+
+  * New upstream release (LP: #289102).
+  * Install upstream desktop file.
+  * Remove debian/links as the upstream desktop file uses a different icon
+    path.
+
+ -- Devid Antonio Filoni <d.filoni@ubuntu.com>  Sat, 25 Oct 2008 15:46:04 +0200
+
+gui-ufw (0.20.4-0ubuntu2) intrepid; urgency=low
+
+  * Install missing files, LP: #280559.
+
+ -- Devid Antonio Filoni <d.filoni@ubuntu.com>  Thu, 09 Oct 2008 15:38:17 +0200
+
+gui-ufw (0.20.4-0ubuntu1) intrepid; urgency=low
+
+  * New upstream release.
+  * Install upstream man page, also remove useless debian/{manpages,gufw.1}.
+  * This new version fixes LP: #275063.
+
+ -- Devid Antonio Filoni <d.filoni@ubuntu.com>  Wed, 08 Oct 2008 20:20:51 +0200
+
+gui-ufw (0.20.2-0ubuntu1) intrepid; urgency=low
+
+  * New upstream release.
+  * Update debian/gufw.desktop file.
+  * Add gksu to Depends field in debian/control.
+
+ -- Devid Antonio Filoni <d.filoni@ubuntu.com>  Wed, 24 Sep 2008 23:01:31 +0200
+
+gui-ufw (0.20.2~bzr158-0ubuntu1) intrepid; urgency=low
+
+  * New upstream bzr revision 158, LP: #273105.
+  * Add gufw/changelog to debian/docs.
+  * This upstream revision also fixes: LP: #267604, #270510, #272109.
+
+ -- Devid Antonio Filoni <d.filoni@ubuntu.com>  Mon, 22 Sep 2008 23:20:01 +0200
+
+gui-ufw (0.20.0-0ubuntu2) intrepid; urgency=low
+
+  * Add python-gnome2 as a dependency (LP: #270115). 
+
+ -- Teemu Heinämäki <teemu.heinamaki@gmail.com>  Sun, 14 Sep 2008 17:15:51 +0300
+
+gui-ufw (0.20.0-0ubuntu1) intrepid; urgency=low
+
+  * New upstream version (LP: #262405).
+  * Drop debian/gufw-launcher, now upstream ships it.
+  * Update debian/copyright.
+  * Adjust upstream email in debian/gufw.1.
+  * Add gufw/todo to debian/docs.
+
+ -- Devid Antonio Filoni <d.filoni@ubuntu.com>  Mon, 12 Sep 2008 21:31:47 +0200
+
+gui-ufw (0.0.7c-0ubuntu1) intrepid; urgency=low
+
+  * Initial release (LP: #252189).
+
+ -- Devid Antonio Filoni <d.filoni@ubuntu.com>  Wed, 27 Aug 2008 12:54:50 +0200
+

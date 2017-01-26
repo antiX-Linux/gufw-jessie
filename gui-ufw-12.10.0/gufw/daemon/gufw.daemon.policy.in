@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+ <!-- Gufw 12.10.0 - http://gufw.tuxfamily.org
+      Copyright (C) 2008-2011 Marcos Alvarez Costales https://launchpad.net/~costales
+      
+      Gufw is free software; you can redistribute it and/or modify
+      it under the terms of the GNU General Public License as published by
+      the Free Software Foundation; either version 3 of the License, or
+      (at your option) any later version.
+      
+      Gufw is distributed in the hope that it will be useful,
+      but WITHOUT ANY WARRANTY; without even the implied warranty of
+      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+      GNU General Public License for more details.
+      
+      You should have received a copy of the GNU General Public License
+      along with Gufw; if not, see http://www.gnu.org/licenses for more
+      information. -->
+<policyconfig>
+
+  <vendor>The Gufw Project</vendor>
+  <vendor_url>http://gufw.tuxfamily.org</vendor_url>
+  <icon_name>gufw</icon_name>
+
+  <action id="gufw.daemon.start">
+    <_description>Manage firewall configuration</_description>
+    <_message>You need to authenticate to modify the firewall configuration.</_message>
+    <defaults>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+</policyconfig>

@@ -1,0 +1,30 @@
+© 2008-2011 ﻿﻿Marcos Alvarez Costales
+-----------------------------------
+
+DEPENDENCIES
+-----------------
+ufw
+gir1.2-gtk-3.0
+gir1.2-polkit-1.0
+gnome-icon-theme-symbolic
+notify-osd or notification-daemon
+policykit-1
+python-dbus
+python-gobject
+python-distutils-extra
+
+FROM DEBIAN OR UBUNTU REPOSITORIES
+-----------------
+INSTALL > sudo apt-get install gufw
+REMOVE  > sudo apt-get purge gufw
+You can run the program by looking for Firewall Configuration in your application menu.
+
+
+FOR OTHER DISTROS
+------------------
+* Get code from https://code.launchpad.net/gui-ufw
+* Then run > sudo python setup.py install --prefix=/usr
+* You may also need to run sudo gtk-update-icon-cache /usr/share/icons/hicolor/
+  if your launcher icon is a bit blurry or doesn't show up.
+* If you have any problems adapting Gufw in other distros, please contact me 
+  and I'll try to help you :) https://launchpad.net/~costales

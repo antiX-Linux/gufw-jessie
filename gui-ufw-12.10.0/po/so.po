@@ -1,0 +1,453 @@
+# Somali translation for gui-ufw
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the gui-ufw package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gui-ufw\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2012-05-03 10:05+0200\n"
+"PO-Revision-Date: 2012-06-08 17:33+0000\n"
+"Last-Translator: Ismael Omar <ismaelhssn@gmail.com>\n"
+"Language-Team: Somali <so@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-06-09 08:01+0000\n"
+"X-Generator: Launchpad (build 15376)\n"
+
+#: view/guiGufw.py:137
+msgid "To"
+msgstr "Ku socoto"
+
+#: view/guiGufw.py:141
+msgid "Action"
+msgstr "Fal"
+
+#: view/guiGufw.py:145
+msgid "From"
+msgstr "Ka socoto"
+
+#: view/guiGufw.py:156
+msgid "Protocol"
+msgstr "Barotokoolka"
+
+#: view/guiGufw.py:159
+msgid "Port"
+msgstr "Godka"
+
+#: view/guiGufw.py:162
+msgid "Address"
+msgstr "Cinwaanka"
+
+#: view/guiGufw.py:165
+msgid "Application"
+msgstr "Tadbiiq"
+
+#: view/guiGufw.py:445
+msgid "Select rule(s)"
+msgstr "Dooro shuruuda"
+
+#: view/guiGufw.py:460
+msgid "Removing rules..."
+msgstr "Bixinayaa shurruudaha..."
+
+#: view/guiGufw.py:488
+msgid "Rule(s) removed"
+msgstr "Shuruuda(ha) waa la bixiyey"
+
+#: view/guiGufw.py:490 view/guiGufw.py:567 view/guiGufw.py:605
+#: view/guiGufw.py:670 view/guiGufw.py:731
+msgid "Error performing operation"
+msgstr "Qalad ku yimid fulinta howsha"
+
+#: view/guiGufw.py:565 view/guiGufw.py:603 view/guiGufw.py:668
+#: view/guiGufw.py:729
+msgid "Rule added"
+msgstr "Shuruuda waa lagu deray"
+
+#: view/guiGufw.py:658
+msgid "Error: Insert a port number"
+msgstr "Qalad: geli godka nambarkiisa"
+
+#: view/guiGufw.py:662 view/guiGufw.py:720 view/guiGufw.py:724
+msgid "Error: Range ports only with tcp or udp protocol"
+msgstr "Qalad: Geli oo kaliya tcp ama udp barotokool"
+
+#: view/guiGufw.py:716
+msgid "Error: Fields filled out incorrectly"
+msgstr "Qalad: Godadka si qaldan ayaa loo buuxiyay"
+
+#: view/guiGufw.py:810
+msgid "Wrong identification"
+msgstr "Sax ma aha aqoonsiga"
+
+#: view/guiGufw.py:936
+msgid "Enabled firewall"
+msgstr "Wuu shaqeynayaa gaashanderbiga"
+
+#: view/guiGufw.py:941
+msgid "Disabled firewall"
+msgstr "Ma shaqeynayo gaashanderbiga"
+
+#: view/guiGufw.py:955
+msgid "Deny all INCOMING traffic"
+msgstr "Diid dhamaan taraafiga IMAANAYA"
+
+#: view/guiGufw.py:959
+msgid "Reject all INCOMING traffic"
+msgstr "Celi dhamaan taraafiga IMAANAYA"
+
+#: view/guiGufw.py:963
+msgid "Allow all INCOMING traffic"
+msgstr "Ogoloow dhamaan taraafiga IMAANAYA"
+
+#: view/guiGufw.py:977
+msgid "Deny all OUTGOING traffic"
+msgstr "Diid dhamaan taraafiga BAXAYA"
+
+#: view/guiGufw.py:981
+msgid "Reject all OUTGOING traffic"
+msgstr "Celi dhamaan taraafiga BAXAYA"
+
+#: view/guiGufw.py:985
+msgid "Allow all OUTGOING traffic"
+msgstr "Ogoloow dhamaan taraafiga BAXAYA"
+
+#: view/guiGufw.py:1031
+msgid ""
+"© 2008-2012 The Gufw Project\n"
+"Shield logo © 2007 Michael Spiegel"
+msgstr ""
+"© 2008-2012 The Gufw Project\n"
+"Shield logo © 2007 Michael Spiegel"
+
+#: view/guiGufw.py:1032
+msgid "Graphical user interface for ufw"
+msgstr "Shaashada muuqaalka isticmaalka ee ufw"
+
+#: view/guiGufw.py:1035
+msgid ""
+"Lead developer:\n"
+"Marcos Alvarez Costales https://launchpad.net/~costales\n"
+"\n"
+"Developers (in alphabetical order):\n"
+"David Planella https://launchpad.net/~dpm\n"
+"Emilio López https://launchpad.net/~turl\n"
+"Giacomo Picchiarelli https://launchpad.net/~gpicchiarelli\n"
+"Jeremy Bicha https://launchpad.net/~jbicha\n"
+"Raúl Soriano https://launchpad.net/~gatoloko\n"
+"Rogério Vicente https://launchpad.net/~rogeriopvl\n"
+"Rubén Megido https://launchpad.net/~runoo\n"
+"Vadim Peretokin https://launchpad.net/~vperetokin\n"
+"\n"
+"Contributors:\n"
+"Cedrick Hannier https://launchpad.net/~cedynamix\n"
+"\n"
+"MOTU\n"
+"Devid Antonio Filoni https://launchpad.net/~d.filoni"
+msgstr ""
+"Hogaanka horumarinta:\n"
+"Marcos Alvarez Costales https://launchpad.net/~costales\n"
+"\n"
+"Horumariyayaasha (qaab alifbeeto):\n"
+"David Planella https://launchpad.net/~dpm\n"
+"Emilio López https://launchpad.net/~turl\n"
+"Giacomo Picchiarelli https://launchpad.net/~gpicchiarelli\n"
+"Jeremy Bicha https://launchpad.net/~jbicha\n"
+"Raúl Soriano https://launchpad.net/~gatoloko\n"
+"Rogério Vicente https://launchpad.net/~rogeriopvl\n"
+"Rubén Megido https://launchpad.net/~runoo\n"
+"Vadim Peretokin https://launchpad.net/~vperetokin\n"
+"\n"
+"Tabarucayaasha:\n"
+"Cedrick Hannier https://launchpad.net/~cedynamix\n"
+"\n"
+"MOTU\n"
+"Devid Antonio Filoni https://launchpad.net/~d.filoni"
+
+#: view/guiGufw.py:1053
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Ismael Omar https://launchpad.net/~ismaelhssn"
+
+#: view/guiGufw.py:1054
+msgid "Shield logo by myke http://michael.spiegel1.at/"
+msgstr "loogaa Shield-ga waxaa leh myke http://michael.spiegel1.at/"
+
+#: view/guiGufw.py:1092
+msgid "Reloaded ufw rules"
+msgstr "Dib ayaa loosoo dejiyay shuruudaha ufw"
+
+#: view/guiGufw.py:1099
+msgid "This will remove all rules and disable the firewall!"
+msgstr ""
+"Kan wuxuu bixinayaa dhamaan shuruudaha wuxuuna curyaaminayaa Gaashaanderbiga"
+
+#: view/guiGufw.py:1100
+msgid "Do you want to continue?"
+msgstr "Ma dooneysaa inaad horey usocoto?"
+
+#: view/guiGufw.py:1101
+msgid "Reset Firewall"
+msgstr "Dib usoo biloow Gaashaanaderbiga"
+
+#: view/guiGufw.py:1110
+msgid "Removed rules and reset firewall!"
+msgstr "Kasaar dhaman shuruudaha dibna usoo biloow Gaashaankaderbiga!"
+
+#: view/guiGufw.py:1169 view/guiGufw.py:1171
+msgid " on "
+msgstr " Shidan "
+
+#: view/guiGufw.py:1201 ui/main.glade:71
+msgid "Firewall"
+msgstr "Gaashaanderbiga"
+
+#: ui/add.glade:12
+msgid "Firewall: Add Rule"
+msgstr "Gaashaanderbiga: Ku dar shuruud"
+
+#: ui/add.glade:28
+msgid "Show extended actions"
+msgstr "Muujir falal badan"
+
+#: ui/add.glade:130 ui/add.glade:131 ui/add.glade:423 ui/add.glade:424
+#: ui/add.glade:690 ui/add.glade:691
+msgid "Rule number to insert"
+msgstr "Shuruud nambar la geliyo"
+
+#: ui/add.glade:407
+msgid "Preconfigured"
+msgstr "Horey loo habeyay"
+
+#: ui/add.glade:673
+msgid "Simple"
+msgstr "Fudud"
+
+#: ui/add.glade:786
+msgid "To:"
+msgstr "Ku:"
+
+#: ui/add.glade:800
+msgid "From:"
+msgstr "Ka."
+
+#: ui/add.glade:849 ui/add.glade:850 ui/add.glade:868 ui/add.glade:869
+msgid "Use PortA:PortB for a port range."
+msgstr "Isticmaal GodkaA:GodkaB xadiga godadka."
+
+#: ui/add.glade:888 ui/add.glade:889
+msgid "Clean values in boxes"
+msgstr "Nadiifi sheyaha ku jira sanduqyada"
+
+#: ui/add.glade:1066
+msgid "Advanced"
+msgstr "Horumarsan"
+
+#: ui/extra_translations_no_distribute.glade:17
+msgid "ALLOW IN"
+msgstr "OGOLOW IMANSHAHA"
+
+#: ui/extra_translations_no_distribute.glade:24
+msgid "DENY IN"
+msgstr "DIID IMANSHAHA"
+
+#: ui/extra_translations_no_distribute.glade:35
+msgid "REJECT IN"
+msgstr "CELI IMANSHAHA"
+
+#: ui/extra_translations_no_distribute.glade:46
+msgid "LIMIT IN"
+msgstr "XADID IMANSHAHA"
+
+#: ui/extra_translations_no_distribute.glade:57
+msgid "ALLOW OUT"
+msgstr "OGOLOW BIXIDA"
+
+#: ui/extra_translations_no_distribute.glade:68
+msgid "DENY OUT"
+msgstr "DIID BIXIDA"
+
+#: ui/extra_translations_no_distribute.glade:81
+msgid "REJECT OUT"
+msgstr "CELI BIXIDA"
+
+#: ui/extra_translations_no_distribute.glade:94
+msgid "LIMIT OUT"
+msgstr "XADID BIXIDA"
+
+#: ui/extra_translations_no_distribute.glade:107
+msgid "ALLOW"
+msgstr "OGOLOW"
+
+#: ui/extra_translations_no_distribute.glade:118
+msgid "DENY"
+msgstr "DIID"
+
+#: ui/extra_translations_no_distribute.glade:131
+msgid "REJECT"
+msgstr "CELI"
+
+#: ui/extra_translations_no_distribute.glade:144
+msgid "LIMIT"
+msgstr "XADEEY"
+
+#: ui/extra_translations_no_distribute.glade:160
+msgid "Anywhere"
+msgstr "Meelwalba"
+
+#: ui/log.glade:7
+msgid "Firewall: Log"
+msgstr "Gaashanderbi: Looga"
+
+#: ui/log.glade:25
+msgid "Show as server script"
+msgstr "Muuji iskaribtiga seerfarka"
+
+#: ui/log.glade:30
+msgid "Show in a simpler format that can be used for scripting"
+msgstr "Muuji hab fudud oo loo adeegsan karo iskaribtiga"
+
+#: ui/log.glade:49
+msgid "Remove all Gufw logs"
+msgstr "Bixi dhamaan loogaga Gufw"
+
+#: ui/main.glade:87
+msgid "_File"
+msgstr "_Feel"
+
+#: ui/main.glade:95
+msgid "_Log..."
+msgstr "_Looga..."
+
+#: ui/main.glade:132
+msgid "_Edit"
+msgstr "_Tafatir"
+
+#: ui/main.glade:140
+msgid "_Add Rule..."
+msgstr "_Ku dar shuruud..."
+
+#: ui/main.glade:153
+msgid "Re_move Rule"
+msgstr "Dib_ubixi Shuruuda"
+
+#: ui/main.glade:174
+msgid "Re_load Rules"
+msgstr "Dib_usoo rar Shuruudaha"
+
+#: ui/main.glade:188
+msgid "Re_set Firewall..."
+msgstr "Dib_usoo bilaaw Gaashanderbiga..."
+
+#: ui/main.glade:228
+msgid "_Help"
+msgstr "_Caawinaad"
+
+#: ui/main.glade:236
+msgid "Documentation..."
+msgstr "Dokumintiyeynta..."
+
+#: ui/main.glade:256
+msgid "Get Help Online..."
+msgstr "Ka hel caawinaad barta internetka"
+
+#: ui/main.glade:268
+msgid "Report a Problem..."
+msgstr "Ka warbixi dhibaato..."
+
+#: ui/main.glade:280
+msgid "Translate this Application..."
+msgstr "Turjum tadbiiqaan..."
+
+#: ui/main.glade:401
+msgid "Add a rule..."
+msgstr "Kudar shuruud..."
+
+#: ui/main.glade:403
+msgid "Add"
+msgstr "Kudar"
+
+#: ui/main.glade:419
+msgid "Remove the selected rule(s)"
+msgstr "Bixi shuruuda(ha) la doortay"
+
+#: ui/main.glade:421
+msgid "Remove"
+msgstr "Kasaar"
+
+#: ui/main.glade:458
+msgid "Unlock the firewall"
+msgstr "Fur gaashaanderbiga"
+
+#: ui/main.glade:472
+msgid "Unlock"
+msgstr "Fur"
+
+#: ui/main.glade:504
+msgid "<b>Rules</b>"
+msgstr "<b>Shuruudaha</b>"
+
+#: ui/main.glade:559
+msgid "<b>Listening Report</b>"
+msgstr "<b>Dhegeysanayaa Warbixinta</b>"
+
+#: ui/main.glade:601
+msgid "Outgoing:"
+msgstr "Dibadda aadaya:"
+
+#: ui/main.glade:615
+msgid "Incoming:"
+msgstr "Gudaha soo gelaya:"
+
+#: ui/main.glade:667
+msgid "Status"
+msgstr "Xaaladda"
+
+#: ui/main.glade:699
+msgid "<b>Firewall</b>"
+msgstr "<b>Gaashaanderbiga</b>"
+
+#: ui/preferences.glade:8
+msgid "Firewall: Preferences"
+msgstr "Gaashaanderbiga: Qiyaaraadka"
+
+#: ui/preferences.glade:74
+msgid "Logging:"
+msgstr "Warbixin ka diyarinaya:"
+
+#: ui/preferences.glade:132
+msgid "<b>ufw Options</b>"
+msgstr "<b>doorashooyinka ufw</b>"
+
+#: ui/preferences.glade:163
+msgid "Logging"
+msgstr "Warbixin ka diyaarinaya"
+
+#: ui/preferences.glade:181
+msgid "Listening Report"
+msgstr "Dhageysanayaa warbixinta"
+
+#: ui/preferences.glade:186
+msgid ""
+"Ports in the listening state for TCP and open state for UDP.\n"
+"If enabled, will result in higher CPU usage."
+msgstr ""
+"Godadku waxey ku jiraan xaalad dhageysi TCP-da iyo xaalada furan UDP-da.\n"
+"Hadii la doorto in laga shaqeysiiyo, waxey keeneysaa CPU-ga oo aad loo "
+"isticmaalo."
+
+#: ui/preferences.glade:202
+msgid "Show notifications"
+msgstr "Muuji ogeysiismaha"
+
+#: ui/preferences.glade:207
+msgid "Show notifications for new connections in Listening Report"
+msgstr "Muuji ogeysiismaha iskuxirnaanshaha cusub ee Warbixinta Dhageysiga"
+
+#: ui/preferences.glade:246
+msgid "<b>Gufw Options</b>"
+msgstr "<b>doorashooyinka Gufw</b>"

@@ -1,0 +1,24 @@
+Source: gui-ufw
+Section: admin
+Priority: optional
+Maintainer: Devid Antonio Filoni <d.filoni@ubuntu.com>
+Uploaders: Python Applications Packaging Team <python-apps-team@lists.alioth.debian.org>,
+           Miriam Ruiz <little_miry@yahoo.es>
+Build-Depends: debhelper (>= 7.0.50~), python-distutils-extra,
+               python (>= 2.6.6-3~)
+Standards-Version: 3.9.3
+Homepage: https://launchpad.net/gui-ufw
+Vcs-Svn: svn://svn.debian.org/python-apps/packages/gui-ufw/trunk/
+Vcs-Browser: http://svn.debian.org/viewsvn/python-apps/packages/gui-ufw/trunk/
+X-Python-Version: >= 2.3
+
+Package: gufw
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}, ufw (>= 0.31.1), gir1.2-gtk-3.0,
+ gir1.2-polkit-1.0, notify-osd | notification-daemon, policykit-1,
+ python-dbus, python-gobject, gnome-icon-theme-symbolic
+XB-Python-Version: ${python:Versions}
+Description: graphical user interface for ufw
+ gufw is an easy and intuitive way to manage your Linux firewall. It supports
+ common tasks such as allowing or blocking pre-configured, common p2p, or
+ individual port(s), and many others!

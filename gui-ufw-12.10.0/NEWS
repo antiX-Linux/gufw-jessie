@@ -1,0 +1,79 @@
+© 2008-2011 ﻿﻿Marcos Alvarez Costales
+
+12.10.0
+=======
+* Fixed bug #986594
+* Fixed bug #992120
+* Fixed bug #72444
+* Fixed bug #911383
+* Fixed bug #925793
+* Little layout improvements
+* Updated translations
+
+12.04.1
+=======
+* Ported to PyGObject and GTK3
+* Removed deprecated UI code
+* Used GtkSwitch to turn firewall off or on
+* Used GtkLockButton to unlock the interface
+* Renamed doc/ files to traditional Unix names and moved to top-level directory
+* Simplified setup script, requires python-distutils-extra
+  https://launchpad.net/python-distutils-extra
+
+12.04.1
+=======
+Updated translations
+Fixed bug #776518 - CUPS port use TCP&UDP
+Fixed bug #729814
+Added Reload Rules menu
+Complete text in rules are translated
+
+11.04.2
+=======
+Translated Policykit message.
+Updated translations.
+Added "Report a Problem..." menu.
+Fixed Bug #688601 (File conflict in mo files and license issue).
+
+11.04.1
+=======
+Fixed main menus for Global Menu in Unity.
+Fixed vulnerability in 11.04.0 for read FW status without policykit.
+Add also UDP ports for qBitTorrent & Deluge.
+Add port 2240tcp for Nicotine. Nicotine has 2º server some times.
+Add Skype with port 443 tcp http://www.skype.com/intl/en-us/support/user-guides/firewalls/technical/
+
+11.04.0
+=======
+Migrate libglade to gtk.builder
+PolicyKit.
+New popup notifications.
+Rebuild glade files > 20% faster & better in high contrast themes.
+New Help menus: Documentation + Answers + Translation.
+Updated translations.
+Redimensionable Rules/Listening panels.
+StatusBar messages hidden in seconds.
+Changed service zeroconf > CUPS (More useful).
+Tooltip for each service.
+Expand rules columns.
+Rules text using 'ubuntu' font.
+
+10.10
+=====
+New feature: New Listening connections (Monitor)
+Updated translations.
+
+10.04
+=====
+Add policy to incoming & outgoing traffic.
+Logs can be exported for servers.
+Fixed various visual glitches.
+Command Remove rule by number.
+Insert rule in row.
+Set log or log-all for one rule.
+Fixed bug #459554: Remove LANGUAGE=C in log server of Gufw.
+Fixed bug #521787: Changed by .deb package. 
+Fixed ports of qBittorrent
+Fixed bug #381705
+Sort Services & Programs by name
+Updated su-to-root command

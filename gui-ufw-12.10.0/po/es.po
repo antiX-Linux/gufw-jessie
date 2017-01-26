@@ -1,0 +1,465 @@
+# Spanish translation for gui-ufw
+# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
+# This file is distributed under the same license as the gui-ufw package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
+# Francisco Molinero <paco@byasl.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gui-ufw\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2012-05-03 10:05+0200\n"
+"PO-Revision-Date: 2012-06-08 09:02+0000\n"
+"Last-Translator: Paco Molinero <paco@byasl.com>\n"
+"Language-Team: Español; Castellano <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-06-09 08:00+0000\n"
+"X-Generator: Launchpad (build 15376)\n"
+
+#: view/guiGufw.py:137
+msgid "To"
+msgstr "A"
+
+#: view/guiGufw.py:141
+msgid "Action"
+msgstr "Acción"
+
+#: view/guiGufw.py:145
+msgid "From"
+msgstr "De"
+
+#: view/guiGufw.py:156
+msgid "Protocol"
+msgstr "Protocolo"
+
+#: view/guiGufw.py:159
+msgid "Port"
+msgstr "Puerto"
+
+#: view/guiGufw.py:162
+msgid "Address"
+msgstr "Dirección"
+
+#: view/guiGufw.py:165
+msgid "Application"
+msgstr "Aplicación"
+
+#: view/guiGufw.py:445
+msgid "Select rule(s)"
+msgstr "Seleccionar regla(s)"
+
+#: view/guiGufw.py:460
+msgid "Removing rules..."
+msgstr "Eliminando reglas..."
+
+#: view/guiGufw.py:488
+msgid "Rule(s) removed"
+msgstr "Regla(s) eliminada(s)"
+
+#: view/guiGufw.py:490 view/guiGufw.py:567 view/guiGufw.py:605
+#: view/guiGufw.py:670 view/guiGufw.py:731
+msgid "Error performing operation"
+msgstr "Error al realizar operación"
+
+#: view/guiGufw.py:565 view/guiGufw.py:603 view/guiGufw.py:668
+#: view/guiGufw.py:729
+msgid "Rule added"
+msgstr "Regla añadida"
+
+#: view/guiGufw.py:658
+msgid "Error: Insert a port number"
+msgstr "Error: inserte un número de puerto"
+
+#: view/guiGufw.py:662 view/guiGufw.py:720 view/guiGufw.py:724
+msgid "Error: Range ports only with tcp or udp protocol"
+msgstr "Error: rango de puertos únicamente con protocolos tcp o udp"
+
+#: view/guiGufw.py:716
+msgid "Error: Fields filled out incorrectly"
+msgstr "Error: campos rellenados incorrectamente"
+
+#: view/guiGufw.py:810
+msgid "Wrong identification"
+msgstr "Identificación incorrecta"
+
+#: view/guiGufw.py:936
+msgid "Enabled firewall"
+msgstr "Cortafuegos activado"
+
+#: view/guiGufw.py:941
+msgid "Disabled firewall"
+msgstr "Cortafuegos desactivado"
+
+#: view/guiGufw.py:955
+msgid "Deny all INCOMING traffic"
+msgstr "Denegar todo el tráfico ENTRANTE"
+
+#: view/guiGufw.py:959
+msgid "Reject all INCOMING traffic"
+msgstr "Rechazar todo el tráfico ENTRANTE"
+
+#: view/guiGufw.py:963
+msgid "Allow all INCOMING traffic"
+msgstr "Permitir todo el tráfico ENTRANTE"
+
+#: view/guiGufw.py:977
+msgid "Deny all OUTGOING traffic"
+msgstr "Denegar todo el tráfico SALIENTE"
+
+#: view/guiGufw.py:981
+msgid "Reject all OUTGOING traffic"
+msgstr "Rechazar todo el tráfico SALIENTE"
+
+#: view/guiGufw.py:985
+msgid "Allow all OUTGOING traffic"
+msgstr "Permitir todo el tráfico SALIENTE"
+
+#: view/guiGufw.py:1031
+msgid ""
+"© 2008-2012 The Gufw Project\n"
+"Shield logo © 2007 Michael Spiegel"
+msgstr ""
+"© 2008-2012 The Gufw Project\n"
+"Shield logo © 2007 Michael Spiegel"
+
+#: view/guiGufw.py:1032
+msgid "Graphical user interface for ufw"
+msgstr "Interfaz gráfica de usuario para ufw"
+
+#: view/guiGufw.py:1035
+msgid ""
+"Lead developer:\n"
+"Marcos Alvarez Costales https://launchpad.net/~costales\n"
+"\n"
+"Developers (in alphabetical order):\n"
+"David Planella https://launchpad.net/~dpm\n"
+"Emilio López https://launchpad.net/~turl\n"
+"Giacomo Picchiarelli https://launchpad.net/~gpicchiarelli\n"
+"Jeremy Bicha https://launchpad.net/~jbicha\n"
+"Raúl Soriano https://launchpad.net/~gatoloko\n"
+"Rogério Vicente https://launchpad.net/~rogeriopvl\n"
+"Rubén Megido https://launchpad.net/~runoo\n"
+"Vadim Peretokin https://launchpad.net/~vperetokin\n"
+"\n"
+"Contributors:\n"
+"Cedrick Hannier https://launchpad.net/~cedynamix\n"
+"\n"
+"MOTU\n"
+"Devid Antonio Filoni https://launchpad.net/~d.filoni"
+msgstr ""
+"Lider de desarrollo:\n"
+"Marcos Álvarez Costales https://launchpad.net/~costales\n"
+"\n"
+"Desarrolladores (en orden alfabético):\n"
+"David Planella https://launchpad.net/~dpm\n"
+"Emilio López https://launchpad.net/~turl\n"
+"Giacomo Picchiarelli https://launchpad.net/~gpicchiarelli\n"
+"Jeremy Bicha https://launchpad.net/~jbicha\n"
+"Raúl Soriano https://launchpad.net/~gatoloko\n"
+"Rogério Vicente https://launchpad.net/~rogeriopvl\n"
+"Rubén Megido https://launchpad.net/~runoo\n"
+"Vadim Peretokin https://launchpad.net/~vperetokin\n"
+"\n"
+"Contribuidores:\n"
+"Cedrick Hannier https://launchpad.net/~cedynamix\n"
+"\n"
+"MOTU\n"
+"Devid Antonio Filoni https://launchpad.net/~d.filoni"
+
+#: view/guiGufw.py:1053
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Costales https://launchpad.net/~costales\n"
+"  Edgar Polanco https://launchpad.net/~theboss-edgar14\n"
+"  Emilio https://launchpad.net/~turl\n"
+"  Fitoschido https://launchpad.net/~fitoschido\n"
+"  Iván Campaña https://launchpad.net/~ivan-campana\n"
+"  Monkey https://launchpad.net/~monkey-libre\n"
+"  Paco Molinero https://launchpad.net/~franciscomol\n"
+"  Pedro Carrasco https://launchpad.net/~blare82\n"
+"  Santi Martínez Cantelli https://launchpad.net/~cantelli\n"
+"  angvp https://launchpad.net/~angvp"
+
+#: view/guiGufw.py:1054
+msgid "Shield logo by myke http://michael.spiegel1.at/"
+msgstr "Logo del escudo realizado por http://michael.spiegel1.at/"
+
+#: view/guiGufw.py:1092
+msgid "Reloaded ufw rules"
+msgstr "Reglas de ufw recargadas"
+
+#: view/guiGufw.py:1099
+msgid "This will remove all rules and disable the firewall!"
+msgstr "¡Esto eliminará todas las reglas y desactivará el cortafuegos!"
+
+#: view/guiGufw.py:1100
+msgid "Do you want to continue?"
+msgstr "¿Quiere continuar?"
+
+#: view/guiGufw.py:1101
+msgid "Reset Firewall"
+msgstr "Restablecer cortafuegos"
+
+#: view/guiGufw.py:1110
+msgid "Removed rules and reset firewall!"
+msgstr "¡Reglas eliminadas y cortafuegos reiniciado!"
+
+#: view/guiGufw.py:1169 view/guiGufw.py:1171
+msgid " on "
+msgstr " en "
+
+#: view/guiGufw.py:1201 ui/main.glade:71
+msgid "Firewall"
+msgstr "Cortafuegos"
+
+#: ui/add.glade:12
+msgid "Firewall: Add Rule"
+msgstr "Cortafuegos: añadir regla"
+
+#: ui/add.glade:28
+msgid "Show extended actions"
+msgstr "Mostrar acciones extendidas"
+
+#: ui/add.glade:130 ui/add.glade:131 ui/add.glade:423 ui/add.glade:424
+#: ui/add.glade:690 ui/add.glade:691
+msgid "Rule number to insert"
+msgstr "Número de regla donde insertar"
+
+#: ui/add.glade:407
+msgid "Preconfigured"
+msgstr "Preconfigurada"
+
+#: ui/add.glade:673
+msgid "Simple"
+msgstr "Simple"
+
+#: ui/add.glade:786
+msgid "To:"
+msgstr "A:"
+
+#: ui/add.glade:800
+msgid "From:"
+msgstr "Desde:"
+
+#: ui/add.glade:849 ui/add.glade:850 ui/add.glade:868 ui/add.glade:869
+msgid "Use PortA:PortB for a port range."
+msgstr "Use PuertoA:PuertoB para un rango de puertos"
+
+#: ui/add.glade:888 ui/add.glade:889
+msgid "Clean values in boxes"
+msgstr "Limpiar valores de las cajas"
+
+#: ui/add.glade:1066
+msgid "Advanced"
+msgstr "Avanzada"
+
+#: ui/extra_translations_no_distribute.glade:17
+msgid "ALLOW IN"
+msgstr "PERMITIR ENTRADA"
+
+#: ui/extra_translations_no_distribute.glade:24
+msgid "DENY IN"
+msgstr "DENEGAR ENTRADA"
+
+#: ui/extra_translations_no_distribute.glade:35
+msgid "REJECT IN"
+msgstr "RECHAZAR ENTRADA"
+
+#: ui/extra_translations_no_distribute.glade:46
+msgid "LIMIT IN"
+msgstr "LIMITAR ENTRADA"
+
+#: ui/extra_translations_no_distribute.glade:57
+msgid "ALLOW OUT"
+msgstr "PERMITIR SALIDA"
+
+#: ui/extra_translations_no_distribute.glade:68
+msgid "DENY OUT"
+msgstr "DENEGAR SALIDA"
+
+#: ui/extra_translations_no_distribute.glade:81
+msgid "REJECT OUT"
+msgstr "RECHAZAR SALIDA"
+
+#: ui/extra_translations_no_distribute.glade:94
+msgid "LIMIT OUT"
+msgstr "LIMITAR SALIDA"
+
+#: ui/extra_translations_no_distribute.glade:107
+msgid "ALLOW"
+msgstr "PERMITIR"
+
+#: ui/extra_translations_no_distribute.glade:118
+msgid "DENY"
+msgstr "DENEGAR"
+
+#: ui/extra_translations_no_distribute.glade:131
+msgid "REJECT"
+msgstr "RECHAZAR"
+
+#: ui/extra_translations_no_distribute.glade:144
+msgid "LIMIT"
+msgstr "LIMITAR"
+
+#: ui/extra_translations_no_distribute.glade:160
+msgid "Anywhere"
+msgstr "Cualquier sitio"
+
+#: ui/log.glade:7
+msgid "Firewall: Log"
+msgstr "Cortafuegos: registro"
+
+#: ui/log.glade:25
+msgid "Show as server script"
+msgstr "Mostrar como guión para servidor"
+
+#: ui/log.glade:30
+msgid "Show in a simpler format that can be used for scripting"
+msgstr "Mostarar en un formato simple que puede ser usado como guión"
+
+#: ui/log.glade:49
+msgid "Remove all Gufw logs"
+msgstr "Borrar todo el registro de Gufw"
+
+#: ui/main.glade:87
+msgid "_File"
+msgstr "_Archivo"
+
+#: ui/main.glade:95
+msgid "_Log..."
+msgstr "_Registro..."
+
+#: ui/main.glade:132
+msgid "_Edit"
+msgstr "_Editar"
+
+#: ui/main.glade:140
+msgid "_Add Rule..."
+msgstr "_Añadir regla..."
+
+#: ui/main.glade:153
+msgid "Re_move Rule"
+msgstr "_Borrar regla"
+
+#: ui/main.glade:174
+msgid "Re_load Rules"
+msgstr "Recargar reg_las"
+
+#: ui/main.glade:188
+msgid "Re_set Firewall..."
+msgstr "Re_stablecer cortafuegos..."
+
+#: ui/main.glade:228
+msgid "_Help"
+msgstr "Ay_uda"
+
+#: ui/main.glade:236
+msgid "Documentation..."
+msgstr "Documentación..."
+
+#: ui/main.glade:256
+msgid "Get Help Online..."
+msgstr "Obtener ayuda en línea..."
+
+#: ui/main.glade:268
+msgid "Report a Problem..."
+msgstr "Informar de un problema…"
+
+#: ui/main.glade:280
+msgid "Translate this Application..."
+msgstr "Traducir esta aplicación…"
+
+#: ui/main.glade:401
+msgid "Add a rule..."
+msgstr "Añadir una regla..."
+
+#: ui/main.glade:403
+msgid "Add"
+msgstr "Añadir"
+
+#: ui/main.glade:419
+msgid "Remove the selected rule(s)"
+msgstr "Eliminar la regla(s) seleccionada(s)"
+
+#: ui/main.glade:421
+msgid "Remove"
+msgstr "Eliminar"
+
+#: ui/main.glade:458
+msgid "Unlock the firewall"
+msgstr "Desbloquear el cortafuegos"
+
+#: ui/main.glade:472
+msgid "Unlock"
+msgstr "Desbloquear"
+
+#: ui/main.glade:504
+msgid "<b>Rules</b>"
+msgstr "<b>Reglas</b>"
+
+#: ui/main.glade:559
+msgid "<b>Listening Report</b>"
+msgstr "<b>Informe de escucha</b>"
+
+#: ui/main.glade:601
+msgid "Outgoing:"
+msgstr "Saliente:"
+
+#: ui/main.glade:615
+msgid "Incoming:"
+msgstr "Entrante:"
+
+#: ui/main.glade:667
+msgid "Status"
+msgstr "Estado"
+
+#: ui/main.glade:699
+msgid "<b>Firewall</b>"
+msgstr "<b>Cortafuegos</b>"
+
+#: ui/preferences.glade:8
+msgid "Firewall: Preferences"
+msgstr "Cortafuegos: preferencias"
+
+#: ui/preferences.glade:74
+msgid "Logging:"
+msgstr "Registro:"
+
+#: ui/preferences.glade:132
+msgid "<b>ufw Options</b>"
+msgstr "<b>Opciones de ufw</b>"
+
+#: ui/preferences.glade:163
+msgid "Logging"
+msgstr "Registro"
+
+#: ui/preferences.glade:181
+msgid "Listening Report"
+msgstr "Informe de escucha"
+
+#: ui/preferences.glade:186
+msgid ""
+"Ports in the listening state for TCP and open state for UDP.\n"
+"If enabled, will result in higher CPU usage."
+msgstr ""
+"Puertos en estado de escucha para TCP y estado abierto para UDP.\n"
+"Si está activo, consumirá más uso de CPU."
+
+#: ui/preferences.glade:202
+msgid "Show notifications"
+msgstr "Mostrar notificaciones"
+
+#: ui/preferences.glade:207
+msgid "Show notifications for new connections in Listening Report"
+msgstr ""
+"Mostrar las notificaciones para conexiones nuevas en el Informe de Escucha"
+
+#: ui/preferences.glade:246
+msgid "<b>Gufw Options</b>"
+msgstr "<b>Opciones de Gufw</b>"
+
+#~ msgid "Firewall Configuration"
+#~ msgstr "Configuración del cortafuegos"

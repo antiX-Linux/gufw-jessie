@@ -1,0 +1,433 @@
+# Basque translation for gui-ufw
+# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
+# This file is distributed under the same license as the gui-ufw package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gui-ufw\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2012-05-03 10:05+0200\n"
+"PO-Revision-Date: 2012-05-02 19:40+0000\n"
+"Last-Translator: Mikel Pascual Aldabaldetreku <mikel.paskual@gmail.com>\n"
+"Language-Team: Basque <eu@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-06-09 08:00+0000\n"
+"X-Generator: Launchpad (build 15376)\n"
+
+#: view/guiGufw.py:137
+msgid "To"
+msgstr "Nora"
+
+#: view/guiGufw.py:141
+msgid "Action"
+msgstr "Ekintza"
+
+#: view/guiGufw.py:145
+msgid "From"
+msgstr "Nondik"
+
+#: view/guiGufw.py:156
+msgid "Protocol"
+msgstr "Protokoloa"
+
+#: view/guiGufw.py:159
+msgid "Port"
+msgstr "Ataka"
+
+#: view/guiGufw.py:162
+msgid "Address"
+msgstr "Helbidea"
+
+#: view/guiGufw.py:165
+msgid "Application"
+msgstr "Aplikazioa"
+
+#: view/guiGufw.py:445
+msgid "Select rule(s)"
+msgstr "Hautatu araua(k)"
+
+#: view/guiGufw.py:460
+msgid "Removing rules..."
+msgstr "Arauak kentzen..."
+
+#: view/guiGufw.py:488
+msgid "Rule(s) removed"
+msgstr "Araua(k) kendurik"
+
+#: view/guiGufw.py:490 view/guiGufw.py:567 view/guiGufw.py:605
+#: view/guiGufw.py:670 view/guiGufw.py:731
+msgid "Error performing operation"
+msgstr "Errorea ekintza burutzean"
+
+#: view/guiGufw.py:565 view/guiGufw.py:603 view/guiGufw.py:668
+#: view/guiGufw.py:729
+msgid "Rule added"
+msgstr "Araua gehituta"
+
+#: view/guiGufw.py:658
+msgid "Error: Insert a port number"
+msgstr "Errorea: Sartu ataka-zenbaki bat"
+
+#: view/guiGufw.py:662 view/guiGufw.py:720 view/guiGufw.py:724
+msgid "Error: Range ports only with tcp or udp protocol"
+msgstr "Errorea: ataka-sortak soilik tcp edo udp protokoloekin"
+
+#: view/guiGufw.py:716
+msgid "Error: Fields filled out incorrectly"
+msgstr "Errorea: Oker betetako eremuak"
+
+#: view/guiGufw.py:810
+msgid "Wrong identification"
+msgstr "Identifikazio okerra"
+
+#: view/guiGufw.py:936
+msgid "Enabled firewall"
+msgstr "Suhesia gaituta"
+
+#: view/guiGufw.py:941
+msgid "Disabled firewall"
+msgstr "Suhesia desgaituta"
+
+#: view/guiGufw.py:955
+msgid "Deny all INCOMING traffic"
+msgstr "Ukatu SARRERAKO trafiko guztia"
+
+#: view/guiGufw.py:959
+msgid "Reject all INCOMING traffic"
+msgstr "Ezetsi SARRERAKO trafiko guztia"
+
+#: view/guiGufw.py:963
+msgid "Allow all INCOMING traffic"
+msgstr "Onartu SARRERAKO trafiko guztia"
+
+#: view/guiGufw.py:977
+msgid "Deny all OUTGOING traffic"
+msgstr "Ukatu IRTEERAKO trafiko guztia"
+
+#: view/guiGufw.py:981
+msgid "Reject all OUTGOING traffic"
+msgstr "Ezetsi IRTEERAKO trafiko guztia"
+
+#: view/guiGufw.py:985
+msgid "Allow all OUTGOING traffic"
+msgstr "Onartu IRTEERAKO trafiko guztia"
+
+#: view/guiGufw.py:1031
+msgid ""
+"© 2008-2012 The Gufw Project\n"
+"Shield logo © 2007 Michael Spiegel"
+msgstr ""
+
+#: view/guiGufw.py:1032
+msgid "Graphical user interface for ufw"
+msgstr "ufw-rentzako erabiltzaile-interfaze grafikoa"
+
+#: view/guiGufw.py:1035
+msgid ""
+"Lead developer:\n"
+"Marcos Alvarez Costales https://launchpad.net/~costales\n"
+"\n"
+"Developers (in alphabetical order):\n"
+"David Planella https://launchpad.net/~dpm\n"
+"Emilio López https://launchpad.net/~turl\n"
+"Giacomo Picchiarelli https://launchpad.net/~gpicchiarelli\n"
+"Jeremy Bicha https://launchpad.net/~jbicha\n"
+"Raúl Soriano https://launchpad.net/~gatoloko\n"
+"Rogério Vicente https://launchpad.net/~rogeriopvl\n"
+"Rubén Megido https://launchpad.net/~runoo\n"
+"Vadim Peretokin https://launchpad.net/~vperetokin\n"
+"\n"
+"Contributors:\n"
+"Cedrick Hannier https://launchpad.net/~cedynamix\n"
+"\n"
+"MOTU\n"
+"Devid Antonio Filoni https://launchpad.net/~d.filoni"
+msgstr ""
+
+#: view/guiGufw.py:1053
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Asier Iturralde Sarasola https://launchpad.net/~asier-iturralde\n"
+"  Mikel Pascual Aldabaldetreku https://launchpad.net/~mpascual\n"
+"  stax https://launchpad.net/~unsegundo-yavoy"
+
+#: view/guiGufw.py:1054
+msgid "Shield logo by myke http://michael.spiegel1.at/"
+msgstr ""
+
+#: view/guiGufw.py:1092
+msgid "Reloaded ufw rules"
+msgstr "ufw arauak birkargatuta"
+
+#: view/guiGufw.py:1099
+msgid "This will remove all rules and disable the firewall!"
+msgstr "Honek arau guztiak kendu eta suhesia desgaituko du!"
+
+#: view/guiGufw.py:1100
+msgid "Do you want to continue?"
+msgstr "Jarraitu nahi duzu?"
+
+#: view/guiGufw.py:1101
+msgid "Reset Firewall"
+msgstr "Berrasieratu suhesia"
+
+#: view/guiGufw.py:1110
+msgid "Removed rules and reset firewall!"
+msgstr "Arauak kendu eta suhesia berrasieratuta!"
+
+#: view/guiGufw.py:1169 view/guiGufw.py:1171
+msgid " on "
+msgstr ""
+
+#: view/guiGufw.py:1201 ui/main.glade:71
+msgid "Firewall"
+msgstr "Suhesia"
+
+#: ui/add.glade:12
+msgid "Firewall: Add Rule"
+msgstr "Suhesia: Gehitu araua"
+
+#: ui/add.glade:28
+msgid "Show extended actions"
+msgstr "Erakutsi ekintza gehigarriak"
+
+#: ui/add.glade:130 ui/add.glade:131 ui/add.glade:423 ui/add.glade:424
+#: ui/add.glade:690 ui/add.glade:691
+msgid "Rule number to insert"
+msgstr "Sartuko den arau zenbakia"
+
+#: ui/add.glade:407
+msgid "Preconfigured"
+msgstr "Aurrekonfiguratua"
+
+#: ui/add.glade:673
+msgid "Simple"
+msgstr "Arrunta"
+
+#: ui/add.glade:786
+msgid "To:"
+msgstr "Nora:"
+
+#: ui/add.glade:800
+msgid "From:"
+msgstr "Nondik:"
+
+#: ui/add.glade:849 ui/add.glade:850 ui/add.glade:868 ui/add.glade:869
+msgid "Use PortA:PortB for a port range."
+msgstr "Erabili A_ataka:B_ataka ataka-sorta baterako"
+
+#: ui/add.glade:888 ui/add.glade:889
+msgid "Clean values in boxes"
+msgstr "Garbitu koadroetako balioak"
+
+#: ui/add.glade:1066
+msgid "Advanced"
+msgstr "Aurreratua"
+
+#: ui/extra_translations_no_distribute.glade:17
+msgid "ALLOW IN"
+msgstr "ONARTU SARRERA"
+
+#: ui/extra_translations_no_distribute.glade:24
+msgid "DENY IN"
+msgstr "UKATU SARRERA"
+
+#: ui/extra_translations_no_distribute.glade:35
+msgid "REJECT IN"
+msgstr "EZETSI SARRERA"
+
+#: ui/extra_translations_no_distribute.glade:46
+msgid "LIMIT IN"
+msgstr "MUGATU SARRERA"
+
+#: ui/extra_translations_no_distribute.glade:57
+msgid "ALLOW OUT"
+msgstr "ONARTU IRTEERA"
+
+#: ui/extra_translations_no_distribute.glade:68
+msgid "DENY OUT"
+msgstr "UKATU IRTEERA"
+
+#: ui/extra_translations_no_distribute.glade:81
+msgid "REJECT OUT"
+msgstr "EZETSI IRTEERA"
+
+#: ui/extra_translations_no_distribute.glade:94
+msgid "LIMIT OUT"
+msgstr "MUGATU IRTEERA"
+
+#: ui/extra_translations_no_distribute.glade:107
+msgid "ALLOW"
+msgstr "ONARTU"
+
+#: ui/extra_translations_no_distribute.glade:118
+msgid "DENY"
+msgstr "UKATU"
+
+#: ui/extra_translations_no_distribute.glade:131
+msgid "REJECT"
+msgstr "EZETSI"
+
+#: ui/extra_translations_no_distribute.glade:144
+msgid "LIMIT"
+msgstr "MUGATU"
+
+#: ui/extra_translations_no_distribute.glade:160
+msgid "Anywhere"
+msgstr "Edonondik"
+
+#: ui/log.glade:7
+msgid "Firewall: Log"
+msgstr "Suhesia: Egunkaria"
+
+#: ui/log.glade:25
+msgid "Show as server script"
+msgstr "Erakutsi zerbitzariko script bezala"
+
+#: ui/log.glade:30
+msgid "Show in a simpler format that can be used for scripting"
+msgstr "Erakutsi script-etan erabili daitekeen formatu sinpleago batean"
+
+#: ui/log.glade:49
+msgid "Remove all Gufw logs"
+msgstr "Kendu Gufw egunkari guztiak"
+
+#: ui/main.glade:87
+msgid "_File"
+msgstr "_Fitxategia"
+
+#: ui/main.glade:95
+msgid "_Log..."
+msgstr "Eg_unkaria..."
+
+#: ui/main.glade:132
+msgid "_Edit"
+msgstr "_Editatu"
+
+#: ui/main.glade:140
+msgid "_Add Rule..."
+msgstr "_Gehitu araua..."
+
+#: ui/main.glade:153
+msgid "Re_move Rule"
+msgstr "_Kendu araua"
+
+#: ui/main.glade:174
+msgid "Re_load Rules"
+msgstr ""
+
+#: ui/main.glade:188
+msgid "Re_set Firewall..."
+msgstr "_Berrasieratu suhesia"
+
+#: ui/main.glade:228
+msgid "_Help"
+msgstr "_Laguntza"
+
+#: ui/main.glade:236
+msgid "Documentation..."
+msgstr "Dokumentazioa..."
+
+#: ui/main.glade:256
+msgid "Get Help Online..."
+msgstr "Lortu laguntza linean..."
+
+#: ui/main.glade:268
+msgid "Report a Problem..."
+msgstr "Arazo baten berri eman..."
+
+#: ui/main.glade:280
+msgid "Translate this Application..."
+msgstr "Aplikazio hau itzuli..."
+
+#: ui/main.glade:401
+msgid "Add a rule..."
+msgstr "Gehitu arau bat..."
+
+#: ui/main.glade:403
+msgid "Add"
+msgstr "Gehitu"
+
+#: ui/main.glade:419
+msgid "Remove the selected rule(s)"
+msgstr "Kendu hautatutako araua(k)"
+
+#: ui/main.glade:421
+msgid "Remove"
+msgstr "Kendu"
+
+#: ui/main.glade:458
+msgid "Unlock the firewall"
+msgstr "Desblokeatu suhesia"
+
+#: ui/main.glade:472
+msgid "Unlock"
+msgstr ""
+
+#: ui/main.glade:504
+msgid "<b>Rules</b>"
+msgstr "<b>Arauak</b>"
+
+#: ui/main.glade:559
+msgid "<b>Listening Report</b>"
+msgstr "<b>Entzuketa txostena</b>"
+
+#: ui/main.glade:601
+msgid "Outgoing:"
+msgstr "Irteerakoa:"
+
+#: ui/main.glade:615
+msgid "Incoming:"
+msgstr "Sarrerakoa:"
+
+#: ui/main.glade:667
+msgid "Status"
+msgstr "Egoera"
+
+#: ui/main.glade:699
+msgid "<b>Firewall</b>"
+msgstr "<b>Suhesia</b>"
+
+#: ui/preferences.glade:8
+msgid "Firewall: Preferences"
+msgstr "Suhesia: Hobespenak"
+
+#: ui/preferences.glade:74
+msgid "Logging:"
+msgstr "Egunkaria:"
+
+#: ui/preferences.glade:132
+msgid "<b>ufw Options</b>"
+msgstr "<b>ufw aukerak</b>"
+
+#: ui/preferences.glade:163
+msgid "Logging"
+msgstr "Egunkaria"
+
+#: ui/preferences.glade:181
+msgid "Listening Report"
+msgstr "Entzuketa txostena"
+
+#: ui/preferences.glade:186
+msgid ""
+"Ports in the listening state for TCP and open state for UDP.\n"
+"If enabled, will result in higher CPU usage."
+msgstr ""
+"Entzuten egoeran dauden TCP  eta irekita egoeran dauden UDP atakak.\n"
+"Gaituz gero, PUZaren erabilera handituko da."
+
+#: ui/preferences.glade:202
+msgid "Show notifications"
+msgstr "Erakutsi jakinarazpenak"
+
+#: ui/preferences.glade:207
+msgid "Show notifications for new connections in Listening Report"
+msgstr "Erakutsi konexio berrien jakinarazpenak Entzuketa Txostenean"
+
+#: ui/preferences.glade:246
+msgid "<b>Gufw Options</b>"
+msgstr "<b>Gufw aukerak</b>"

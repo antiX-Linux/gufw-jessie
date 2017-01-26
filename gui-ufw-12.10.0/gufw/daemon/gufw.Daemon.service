@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=gufw.Daemon
+Exec=/usr/share/gufw/daemon/gufw_daemon.py
+User=root

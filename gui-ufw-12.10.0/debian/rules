@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+%:
+	dh --with python2 $@
+
+override_dh_auto_install:
+	dh_auto_install -- --install-lib=usr/share/gufw\
+		--install-scripts=usr/share/gufw
+
+	rm -f $(CURDIR)/debian/gufw/usr/bin/gufw
+	mkdir -p $(CURDIR)/debian/gufw/usr/bin
+	echo "#!/bin/sh" > $(CURDIR)/debian/gufw/usr/bin/gufw
+	echo "python /usr/share/gufw/gufw/gufw.py" >> $(CURDIR)/debian/gufw/usr/bin/gufw
+	chmod 755 $(CURDIR)/debian/gufw/usr/bin/gufw
