@@ -6,12 +6,12 @@
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 3 of the License, or
 # (at your option) any later version.
-# 
+#
 # Gufw is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
-# 
+#
 # You should have received a copy of the GNU General Public License
 # along with Gufw; if not, see http://www.gnu.org/licenses for more
 # information.
@@ -42,7 +42,7 @@ class GuiGufw:
     FONT = "ubuntu 10"
     TIME_REFRESH_REPORT = 2500
     TIME_STATUS_BAR = 8
-    
+
     def __init__(self, firewall):
         self.fw = firewall
         self.path = Path()
@@ -50,7 +50,7 @@ class GuiGufw:
         self._set_ui(self.ui_builder)
         GLib.set_application_name("Gufw")
         Gtk.main()
-    
+
     def _set_ui(self, builder):
         """Set the interfaces"""
         builder.set_translation_domain("gufw")
@@ -61,7 +61,7 @@ class GuiGufw:
         self._set_ui_preferences(builder)
         self._set_ui_log(builder)
         self.win_main.show()
-    
+
     def _set_ui_main(self, builder):
         """Set the window Main"""
         self.first_run_report = True
@@ -81,7 +81,7 @@ class GuiGufw:
         # Panel
         self.panelmain = builder.get_object("panelListeningRules")
         self.panelmain.set_position(self.fw.get_vpanel_pos())
-        # Main Window Objects 
+        # Main Window Objects
         self.cb_policy_incoming  = builder.get_object("cbPolicyIncoming")
         self.cb_policy_outgoing  = builder.get_object("cbPolicyOutgoing")
         self.image_shield        = builder.get_object("imgShield")
@@ -92,6 +92,17 @@ class GuiGufw:
         self.progress_bar        = builder.get_object("progressBar")
         self.progress_bar_block  = builder.get_object("progressBarBlock")
         self.btn_unlock          = builder.get_object("btnUnlock")
+        self.label7      = builder.get_object("label7")   #labelface
+        self.panel_fw_status = builder.get_object("panel_fw_status")
+        self.panel_fw_status.hide()
+        import os, subprocess
+        if os.path.isfile('/usr/local/bin/checkufw.sh'):
+            try:
+                yadda = subprocess.check_output('/usr/local/bin/checkufw.sh', shell=False)
+                self.label7.set_text('NO, firewall service is currently _NOT_ running')  #labelface
+            except:
+                self.label7.set_text('YES, firewall service is currently running')
+                pass
         # Needed for firewall switch & lock button
         self.block_status        = builder.get_object("blockStatus")
         # Objects for Global Menu in Unity
@@ -121,19 +132,19 @@ class GuiGufw:
             self.block_report.show()
         # Focus
         self.btn_unlock.grab_focus()
-            
+
     def _set_ui_models(self, builder):
         """Set the models in main window"""
         self.render_txt = Gtk.CellRendererText()
         self.render_txt.set_property("font", self.FONT)
-        
+
         self.rules_model = Gtk.ListStore(GObject.TYPE_INT,    GObject.TYPE_STRING, GObject.TYPE_STRING,
                                          GObject.TYPE_STRING, GObject.TYPE_STRING)
-        
+
         self.tv_rules = builder.get_object("tvRules")
         self.tv_rules.set_model(self.rules_model)
         self.tv_rules.get_selection().set_mode(Gtk.SelectionMode.MULTIPLE)
-        
+
         tree_header = Gtk.TreeViewColumn (_("To"), self.render_txt, text=1, foreground=4)
         tree_header.set_expand(True)
         tree_header.set_resizable(True)
@@ -145,14 +156,14 @@ class GuiGufw:
         tree_header = Gtk.TreeViewColumn (_("From"), self.render_txt, text=3, foreground=4)
         tree_header.set_expand(True)
         self.tv_rules.append_column (tree_header)
-        
+
         # Listening Report
         self.report_model = Gtk.ListStore(GObject.TYPE_INT,    GObject.TYPE_STRING, GObject.TYPE_STRING,
-                                          GObject.TYPE_STRING, GObject.TYPE_STRING, GObject.TYPE_STRING) 
+                                          GObject.TYPE_STRING, GObject.TYPE_STRING, GObject.TYPE_STRING)
         self.tv_report = builder.get_object("tvReport")
         self.tv_report.set_model(self.report_model)
         self.tv_report.get_selection().set_mode(Gtk.SelectionMode.NONE)
-        
+
         tree_header = Gtk.TreeViewColumn (_("Protocol"), self.render_txt, text=1, foreground=5)
         tree_header.set_resizable(True)
         self.tv_report.append_column (tree_header)
@@ -164,7 +175,7 @@ class GuiGufw:
         self.tv_report.append_column (tree_header)
         tree_header = Gtk.TreeViewColumn (_("Application"), self.render_txt, text=4, foreground=5)
         self.tv_report.append_column (tree_header)
-    
+
     def _set_ui_add(self, builder):
         """Set the window Add"""
         builder.add_from_file(self.path.get_ui_path('add.ui'))
@@ -214,7 +225,7 @@ class GuiGufw:
         self.rules_notebook   = builder.get_object("rulesNotebook")
         self.add_btn_add      = builder.get_object("btnAddRule")
         self.extended_actions = builder.get_object("cbExtendedActions")
-        
+
     def _set_ui_preferences(self, builder):
         """Set the window Preferences"""
         builder.add_from_file(self.path.get_ui_path('preferences.ui'))
@@ -225,9 +236,9 @@ class GuiGufw:
         self.cb_notify_popup = builder.get_object("cbNotifyPopup")
         self.lbl_ufw_level   = builder.get_object("lblLogLevel")
         self.cb_ufw_level    = builder.get_object("cbLogLevel")
-        self.cb_gufw_log     = builder.get_object("cbGufwLog") 
+        self.cb_gufw_log     = builder.get_object("cbGufwLog")
         self.pref_btn_close  = builder.get_object("btnClosePref")
-            
+
     def _set_ui_log(self, builder):
         """Set the window Log"""
         builder.add_from_file(self.path.get_ui_path('log.ui'))
@@ -238,7 +249,7 @@ class GuiGufw:
         self.log_txt_buffer = self.log_txt.get_buffer()
         self.log_btn_close  = builder.get_object("btnCloseLog")
         self.server_script  = builder.get_object("cbServerScript")
-    
+
     def _set_main_values(self, statusbar_msg):
         """Set initial status for GUI"""
         # Set sensitive values by status firewall
@@ -273,12 +284,12 @@ class GuiGufw:
         self._set_rules_list()
         # StatusBar
         self._set_statusbar_msg(statusbar_msg)
-    
+
     def _set_statusbar_msg(self, msg):
         cid = self.status_bar.get_context_id('default context')
         mid = self.status_bar.push(cid, msg)
         GObject.timeout_add_seconds(self.TIME_STATUS_BAR, self.status_bar.remove, cid, mid)
-    
+
     def _set_rules_list(self):
         """Set rules in main window"""
         row = 0
@@ -290,14 +301,14 @@ class GuiGufw:
             # Set value txt
             rule_formated = self._get_format_rules_txt(rule)
             # Get color
-            color = self._get_rule_color(rule_formated[1])            
+            color = self._get_rule_color(rule_formated[1])
             # Set values
             self.rules_model.set_value(iterador, 0, row) # Use for remove rule
             self.rules_model.set_value(iterador, 1, _(rule_formated[0].strip()))
             self.rules_model.set_value(iterador, 2, _(rule_formated[1].strip()))
             self.rules_model.set_value(iterador, 3, _(rule_formated[2].strip()))
             self.rules_model.set_value(iterador, 4, color) # Foreground color rule
-    
+
     def _get_rule_color(self, rule):
         """Return color rule"""
         # Color Allow/Deny/Reject/Limit
@@ -322,9 +333,9 @@ class GuiGufw:
         # Limit?
         elif rule == "LIMIT IN":
             return __color__["orange"]
-        
+
         # OUT mode
-        elif rule == "ALLOW OUT": 
+        elif rule == "ALLOW OUT":
             if self.fw.get_policy("outgoing") != "allow":
                 return __color__["red"]
             else:
@@ -344,10 +355,10 @@ class GuiGufw:
         # Limit?
         elif rule == "LIMIT OUT":
             return __color__["orange"]
-            
+
         # NORMAL mode
         # Allow?
-        elif rule == "ALLOW": 
+        elif rule == "ALLOW":
             if self.fw.get_policy("incoming") != "allow":
                 return __color__["red"]
             else:
@@ -367,7 +378,7 @@ class GuiGufw:
         # Limit?
         elif rule == "LIMIT":
             return __color__["orange"]
-        
+
     def _get_format_rules_txt(self, rule):
         # IN mode (equal to normal mode, persist code for clear read)
         if rule.find("ALLOW IN") != -1:
@@ -381,9 +392,9 @@ class GuiGufw:
         # Limit?
         elif rule.find("LIMIT IN") != -1:
             split_str = "LIMIT IN"
-        
+
         # OUT mode
-        elif rule.find("ALLOW OUT") != -1: 
+        elif rule.find("ALLOW OUT") != -1:
             split_str = "ALLOW OUT"
         # Deny?
         elif rule.find("DENY OUT") != -1:
@@ -394,10 +405,10 @@ class GuiGufw:
         # Limit?
         elif rule.find("LIMIT OUT") != -1:
             split_str = "LIMIT OUT"
-            
+
         # NORMAL mode
         # Allow?
-        elif rule.find("ALLOW") != -1: 
+        elif rule.find("ALLOW") != -1:
             split_str = "ALLOW"
         # Deny?
         elif rule.find("DENY") != -1:
@@ -408,11 +419,11 @@ class GuiGufw:
         # Limit?
         elif rule.find("LIMIT") != -1:
             split_str = "LIMIT"
-        
+
         # Values
         rule_split = rule.split(split_str)
         return rule_split[0].strip(), split_str, rule_split[1].strip()
-    
+
     def _do_refresh_report(self):
         """Refresh method in background (no freeze)"""
         if self.fw.get_listening_status() == "disable":
@@ -420,7 +431,7 @@ class GuiGufw:
             self.first_run_report = True
             self.report_model.clear()
             return False
-        
+
         lines = self.fw.get_listening_report()
         background_job = RefreshReport(self.fw.get_status(), self.report_model, lines, self.previous_report, self.first_run_report, self.fw.get_notify_popup())
         background_job.start()
@@ -428,11 +439,11 @@ class GuiGufw:
         if self.fw.get_listening_status() == "enable":
             self.first_run_report = False
             return True
-        
+
     def _refresh_report(self):
         """Refresh Listening Report"""
         GObject.timeout_add(self.TIME_REFRESH_REPORT, self._do_refresh_report)
-        
+
     def _remove_rule(self):
         """Remove Rules Method"""
         number_rules = self.fw.get_number_rules()
@@ -440,7 +451,7 @@ class GuiGufw:
         removed = 0
         actual_row = 0
         total_rows = len(iter)
-           
+
         if total_rows == 0:
             self._set_main_values(_("Select rule(s)"))
             yield None
@@ -462,10 +473,10 @@ class GuiGufw:
         # For one row selected
         iter.reverse() # Remove first the last rules for not overwrite rules
         for item in iter:
-            
+
             # Get rule selected (row number)
             number_rule_row = tree.get_value(tree.get_iter(item), 0)
-            
+
             # Move Progress Bar
             actual_row += 1
             progress = float(actual_row) / float(total_rows)
@@ -473,7 +484,7 @@ class GuiGufw:
                 progress = 1.0
             self.progress_bar.set_fraction(progress)
             yield True
-            
+
             self.fw.remove_rule(number_rule_row)
 
         # Clean Progress Bar
@@ -483,12 +494,12 @@ class GuiGufw:
         self.menu_pref.set_sensitive(True)
         self.menu_reload.set_sensitive(True)
         self.menu_reset.set_sensitive(True)
-        
+
         if number_rules != self.fw.get_number_rules():
             self._set_main_values(_("Rule(s) removed"))
         else:
             self._set_main_values(_("Error performing operation"))
-        
+
         yield None
 
     def _add_rule_preconf(self):
@@ -520,7 +531,7 @@ class GuiGufw:
                 log = "log"
             elif self.log_preconf.get_active() == 2:
                 log = "log-all"
-        
+
         # Service?
         if self.type_preconf.get_active() == 1:
             SERVICES = { 0 : "ftp",
@@ -556,19 +567,19 @@ class GuiGufw:
                     port     = port_proto
                     protocol = ""
                     is_program = False
-                
+
                 self.fw.add_rule(is_program, insert_number, action, direction, log, protocol, "", "", "", port)
                 if self.service_preconf.get_active() == 6: #Samba > Special command. Bug #72444
                     self.fw.add_rule(is_program, insert_number, action, "", log, protocol, "any", port, "", "")
-            
+
             if number_rules != self.fw.get_number_rules():
                 self._set_main_values(_("Rule added"))
             else:
                 self._set_main_values(_("Error performing operation"))
-                
+
         # Program?
         else:
-            PROGRAMS = { #Amule        
+            PROGRAMS = { #Amule
                          0 : "4662tcp#4672udp",
                          #Deluge
                          1 : "6881:6891tcp#6881:6891udp",
@@ -596,14 +607,14 @@ class GuiGufw:
                 elif prog.find("both") != -1:
                     port     = prog.replace("both", "")
                     protocol = "both"
-                    
+
                 self.fw.add_rule(True, insert_number, action, direction, log, protocol, "", "", "", port)
-                    
-            if number_rules != self.fw.get_number_rules(): 
+
+            if number_rules != self.fw.get_number_rules():
                 self._set_main_values(_("Rule added"))
             else:
                 self._set_main_values(_("Error performing operation"))
-    
+
     def _add_rule_simple(self):
         """Add a simple rule"""
         number_rules = self.fw.get_number_rules()
@@ -644,9 +655,9 @@ class GuiGufw:
         port = self.port_simple.get_text()
         # ? -> ! Don't read the next!!
         if port == "stallman":
-            dlg_egg = Gtk.MessageDialog(self.win_main, 
+            dlg_egg = Gtk.MessageDialog(self.win_main,
             Gtk.DialogFlags.MODAL | Gtk.DialogFlags.DESTROY_WITH_PARENT,
-            Gtk.MessageType.WARNING, Gtk.ButtonsType.CLOSE, 
+            Gtk.MessageType.WARNING, Gtk.ButtonsType.CLOSE,
             "'Value your freedom or you will lose it,' teaches history.\n'Don't bother us with politics,' respond those who \ndon't want to learn.")
             dlg_egg.format_secondary_markup("Richard Stallman")
             dlg_egg.set_title("It's time to think!")
@@ -663,12 +674,12 @@ class GuiGufw:
             return
         # Add rule
         self.fw.add_rule(True, insert_number, action, direction, log, protocol, "", "", "", port)
-        
+
         if number_rules != self.fw.get_number_rules():
             self._set_main_values(_("Rule added"))
         else:
             self._set_main_values(_("Error performing operation"))
-        
+
     def _add_rule_advanced(self):
         """Add an advanced rule"""
         number_rules = self.fw.get_number_rules()
@@ -710,7 +721,7 @@ class GuiGufw:
         fromport = self.portfrom_advanced.get_text()
         # To
         toip   = self.toip_advanced.get_text()
-        toport = self.portto_advanced.get_text() 
+        toport = self.portto_advanced.get_text()
         # Validate values
         if fromip == "" and fromport == "" and toip == "" and toport == "":
             self._set_statusbar_msg(_("Error: Fields filled out incorrectly"))
@@ -719,7 +730,7 @@ class GuiGufw:
         if ( fromport != "" and fromport.find(":") != -1 ) and protocol == "both":
             self._set_statusbar_msg(_("Error: Range ports only with tcp or udp protocol"))
             return
-        # Validate both and not range ports in TO            
+        # Validate both and not range ports in TO
         if ( toport != "" and toport.find(":") != -1 ) and protocol == "both":
             self._set_statusbar_msg(_("Error: Range ports only with tcp or udp protocol"))
             return
@@ -729,27 +740,27 @@ class GuiGufw:
             self._set_main_values(_("Rule added"))
         else:
             self._set_main_values(_("Error performing operation"))
-    
+
     def on_btnAddWindow_clicked(self, widget):
         """Button Add"""
         self.btn_add_window.set_sensitive(False)
         self.menu_add.set_sensitive(False)
         self.dlg_add.show()
-    
+
     def on_btnCloseAdd_clicked(self, widget):
         """Button Close Add Rules"""
         self.btn_add_window.set_sensitive(True)
         self.menu_add.set_sensitive(True)
         self.dlg_add.hide()
         return True
-    
+
     def on_btnClosePref_clicked(self, widget):
         """Closes preferences dialog when close button is clicked."""
         self.dlg_preferences.hide()
         return True
 
     def on_dlgPref_delete_event(self, widget, event):
-        """Closes preferences dialog for all close events except clicking the 
+        """Closes preferences dialog for all close events except clicking the
         close button.
         """
         self.dlg_preferences.hide()
@@ -761,7 +772,7 @@ class GuiGufw:
         return True
 
     def on_dlgLog_delete_event(self, widget, event):
-        """Closes log dialog for all close events except clicking the 
+        """Closes log dialog for all close events except clicking the
         close button.
         """
         self.dlg_log.hide()
@@ -777,7 +788,7 @@ class GuiGufw:
         """Remove rules in background"""
         task = self._remove_rule()
         GObject.idle_add(task.next)
-    
+
     def on_btnAddRule_clicked(self, widget):
         """Add rule Button"""
         # Simple rule
@@ -789,17 +800,20 @@ class GuiGufw:
         # Advanced rule
         elif self.rules_notebook.get_current_page() == 2:
             self._add_rule_advanced()
-    
+
     def on_btnCleanAdvanced_clicked(self, widget):
         """Clear values in advanced tab"""
         self.fromip_advanced.set_text("")
         self.portfrom_advanced.set_text("")
         self.toip_advanced.set_text("")
         self.portto_advanced.set_text("")
-    
+
     def on_btnUnlock_clicked(self, widget):
         if self.fw.unlock() == "access":
             self._set_initial_objects_main()
+            self.label7.hide()   #------- labelface
+            self.panel_fw_status.show()
+
             self._set_initial_objects_preferences()
             self._set_main_values("")
             self.ui_builder.connect_signals(self)
@@ -808,7 +822,7 @@ class GuiGufw:
             self._refresh_report()
         else:
             self._set_statusbar_msg(_("Wrong identification"))
-        
+
     def _set_initial_objects_main(self):
         """Set the initial "unlocked" status"""
         # Hiden buttons
@@ -845,7 +859,7 @@ class GuiGufw:
             self.cb_policy_outgoing.set_active(1)
         elif outgoing == "allow":
             self.cb_policy_outgoing.set_active(2)
-    
+
     def _set_initial_objects_preferences(self):
         """Set the initial "locked" status"""
         # Listening report
@@ -853,7 +867,7 @@ class GuiGufw:
             self.cb_report.set_active(True)
         else:
             self.cb_report.set_active(False)
-            self.cb_notify_popup.set_sensitive(False)            
+            self.cb_notify_popup.set_sensitive(False)
         # Show Notify popups
         if self.fw.get_notify_popup() == "enable":
             self.cb_notify_popup.set_active(True)
@@ -878,7 +892,7 @@ class GuiGufw:
             self.cb_gufw_log.set_active(True)
         else:
             self.cb_gufw_log.set_active(0)
-    
+
     def on_cbLogLevel_changed(self, widget):
         """Change Logging Level"""
         if ( self.cb_ufw_level.get_active() == 0 ):
@@ -891,7 +905,7 @@ class GuiGufw:
             self.fw.set_ufw_logging("high")
         elif ( self.cb_ufw_level.get_active() == 4 ):
             self.fw.set_ufw_logging("full")
-    
+
     def on_cbGufwLog_toggled(self, widget):
         """Gufw Log CheckButton"""
         if self.cb_gufw_log.get_active() == 1:
@@ -900,7 +914,7 @@ class GuiGufw:
         elif self.cb_gufw_log.get_active() == 0:
             self.fw.set_gufw_logging("disable")
             self.menu_log.set_sensitive(False)
-    
+
     def on_cbReport_toggled(self, widget):
         """Listening report"""
         if self.cb_report.get_active() == 1:
@@ -912,34 +926,34 @@ class GuiGufw:
             self.cb_notify_popup.set_sensitive(False)
             self.block_report.hide()
         self._refresh_report()
-    
+
     def on_cbNotifyPopup_toggled(self, widget):
         """Show Notify Popups for Listening reports"""
         if self.cb_notify_popup.get_active() == 1:
             self.fw.set_notify_popup("enable")
         else:
             self.fw.set_notify_popup("disable")
-        
+
     def on_cbServerScript_toggled(self, widget):
         """View Gufw Log as Server Script"""
         if self.server_script.get_active():
             self.log_txt_buffer.set_text(self.fw.get_gufw_log('server'))
         else:
             self.log_txt_buffer.set_text(self.fw.get_gufw_log('local'))
-    
+
     def on_switchFirewall_toggled(self, widget, data):
         """Changed FW Status"""
         if self.switchFirewall.get_active() == True:
             self.fw.set_status("enable")
             self.cb_ufw_level.set_sensitive(True)
-            self.lbl_ufw_level.set_sensitive(True)            
+            self.lbl_ufw_level.set_sensitive(True)
             self._set_main_values(_("Enabled firewall"))
         else:
             self.fw.set_status("disable")
             self.cb_ufw_level.set_sensitive(False)
             self.lbl_ufw_level.set_sensitive(False)
             self._set_main_values(_("Disabled firewall"))
-    
+
     def on_cbPolicyIncoming_changed(self, widget):
         """Policy (Deny/Allow/Reject All) Incoming"""
         # Apply?
@@ -949,7 +963,7 @@ class GuiGufw:
             return
         if self.fw.get_policy("incoming") == "allow" and self.cb_policy_incoming.get_active() == 2:
             return
-        
+
         if self.cb_policy_incoming.get_active() == 0:
             self.fw.set_policy("incoming", "deny")
             self._set_main_values(_("Deny all INCOMING traffic"))
@@ -961,7 +975,7 @@ class GuiGufw:
         elif self.cb_policy_incoming.get_active() == 2:
             self.fw.set_policy("incoming", "allow")
             self._set_main_values(_("Allow all INCOMING traffic"))
-            
+
     def on_cbPolicyOutgoing_changed(self, widget):
         """Policy (Deny/Allow/Reject All) Outgoing"""
         # Apply?
@@ -971,7 +985,7 @@ class GuiGufw:
             return
         if self.fw.get_policy("outgoing") == "allow" and self.cb_policy_outgoing.get_active() == 2:
             return
-        
+
         if self.cb_policy_outgoing.get_active() == 0:
             self.fw.set_policy("outgoing", "deny")
             self._set_main_values(_("Deny all OUTGOING traffic"))
@@ -983,7 +997,7 @@ class GuiGufw:
         elif self.cb_policy_outgoing.get_active() == 2:
             self.fw.set_policy("outgoing", "allow")
             self._set_main_values(_("Allow all OUTGOING traffic"))
-    
+
     def on_cbTypePreconf_changed(self, widget):
         """Change between Service/Program"""
         if self.type_preconf.get_active() == 0:
@@ -992,7 +1006,7 @@ class GuiGufw:
         else:
             self.service_preconf.show()
             self.program_preconf.hide()
-    
+
     def on_cbExtendedActions_toggled(self, widget):
         """Extended actions"""
         # Set hide extended actions
@@ -1010,7 +1024,7 @@ class GuiGufw:
             self.log_preconf.show()
             self.log_simple.show()
             self.log_advanced.show()
-    
+
     def on_menuQuit_activate(self, widget):
         """Menu Quit"""
         width, height = self.win_main.get_size()
@@ -1019,12 +1033,12 @@ class GuiGufw:
             self.fw.set_listening_status("disable")
             self._refresh_report()
         Gtk.main_quit()
-    
-    def on_menuPreferences_activate(self, widget):            
+
+    def on_menuPreferences_activate(self, widget):
         """Show Window Preferences"""
         self.pref_btn_close.grab_focus()
         self.dlg_preferences.show()
-    
+
     def on_menuAbout_activate(self, widget):
         """View About Window"""
         about = Gtk.AboutDialog()
@@ -1051,7 +1065,7 @@ Cedrick Hannier https://launchpad.net/~cedynamix
 MOTU
 Devid Antonio Filoni https://launchpad.net/~d.filoni''')])
         about.set_translator_credits(_("translator-credits"))
-        about.set_artists([_("Shield logo by myke http://michael.spiegel1.at/"), 
+        about.set_artists([_("Shield logo by myke http://michael.spiegel1.at/"),
 ("Tutorial http://www.gimpusers.com/tutorials/create-a-shield-symbol.html")])
         about.set_license('''The shield logo is licensed under a Creative Commons
 Attribution 3.0 Unported License. See for more information:
@@ -1083,14 +1097,14 @@ http://www.gnu.org/licenses''')
             self.log_txt_buffer.set_text(self.fw.get_gufw_log('server'))
         else:
             self.log_txt_buffer.set_text(self.fw.get_gufw_log('local'))
-        
+
         self.log_btn_close.grab_focus()
         self.dlg_log.show()
-    
+
     def on_menuReload_activate(self, widget):
         """Reload the ufw rules"""
         self._set_main_values(_("Reloaded ufw rules"))
-        
+
     def on_menuReset_activate(self, widget):
         """Reset ufw"""
         reset_dialog = Gtk.MessageDialog(self.win_main,
@@ -1108,23 +1122,23 @@ http://www.gnu.org/licenses''')
                 self.switchFirewall.set_active(False)
             self.fw.reset_ufw()
             self._set_main_values(_("Removed rules and reset firewall!"))
-    
+
     def on_menuDoc_activate(self, widget):
         """Launch browser with Documentation web"""
         webbrowser.open_new("https://help.ubuntu.com/community/Gufw")
-        
+
     def on_menuAnswers_activate(self, widget):
         """Launch browser with Documentation web"""
         webbrowser.open_new("https://answers.launchpad.net/gui-ufw")
-        
+
     def on_menuTranslate_activate(self, widget):
         """Launch browser with Documentation web"""
         webbrowser.open_new("https://translations.launchpad.net/gui-ufw/trunk/+translations")
-        
+
     def on_menuBug_activate(self, widget):
         """Launch browser with Bug Report web"""
         webbrowser.open_new("https://bugs.launchpad.net/gui-ufw")
-        
+
     def on_winMain_delete_event(self, widget, event):
         """Close Button Main Window"""
         width, height = self.win_main.get_size()
@@ -1133,14 +1147,14 @@ http://www.gnu.org/licenses''')
             self.fw.set_listening_status("disable")
             self._refresh_report()
         Gtk.main_quit()
-    
+
     def on_dlgAdd_delete_event(self, widget, event):
         """Close Button Window Add Rules"""
         self.btn_add_window.set_sensitive(True)
         self.menu_add.set_sensitive(True)
         self.dlg_add.hide()
         return True
-    
+
 class RefreshReport(threading.Thread):
     """Refresh Listening report in background"""
     def __init__(self, fw_status, model, lines, previous_lines, first_run, show_popups):
@@ -1155,10 +1169,10 @@ class RefreshReport(threading.Thread):
         self.previous_lines = previous_lines
         self.first_run = first_run
         self.show_popup = show_popups
-    
+
     def run(self):
         """Show listening report in GUI"""
-        self.listening_model.clear() 
+        self.listening_model.clear()
         row = 0
         notif_msg = ""
         for line in self.lines:
@@ -1169,23 +1183,23 @@ class RefreshReport(threading.Thread):
                     msg = msg_split[2] + _(" on ") + msg_split[1] + " " + msg_split[0] # IP
                 else:
                     msg = msg_split[3] + _(" on ") + msg_split[1] + " " + msg_split[0] # App
-                
+
                 if notif_msg == "":
                     notif_msg = msg
                 else:
                     notif_msg = "\n".join([notif_msg, msg])
-            
+
             # Update the Listening Report
             row += 1
             iter = self.listening_model.insert(row)
             line_split = line.split("%")
-                        
+
             self.listening_model.set_value(iter, 0, row)
             self.listening_model.set_value(iter, 1, line_split[0].strip()) # Protocol
             self.listening_model.set_value(iter, 2, line_split[1].strip()) # Port
             self.listening_model.set_value(iter, 3, line_split[2].strip()) # Address
             self.listening_model.set_value(iter, 4, line_split[3].strip()) # App
-            
+
             if self.firewall_status == "enable":
                 if line_split[4] == "allow":
                     self.listening_model.set_value(iter, 5, __color__["red"])
@@ -1195,7 +1209,7 @@ class RefreshReport(threading.Thread):
                     self.listening_model.set_value(iter, 5, __color__["blue"])
                 elif line_split[4] == "limit":
                     self.listening_model.set_value(iter, 5, __color__["orange"])
-                    
-        # Notifications system for new connections        
+
+        # Notifications system for new connections
         if ( self.show_popup == "enable" ) and ( not notif_msg == "" ):
             self.notify_interface.Notify("Gufw", 0, self.path.get_icon_path(), _("Firewall"), notif_msg, '', {"x-canonical-append": dbus.String("allowed")}, -1) # Expired time notification blocked by bug #390508
