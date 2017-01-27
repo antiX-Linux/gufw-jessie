@@ -1,5 +1,6 @@
 #!/bin/bash
-# SUID wrapper enabling gufw application to immediately detect fw status
+# SUID wrapper enabling gufw application to detect and immediately
+# display fw status when launched
 
 if  sudo service ufw status; then
     #echo 'yay'
