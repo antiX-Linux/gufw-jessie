@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.18.3 -->
 <interface>
-  <!-- interface-requires gtk+ 3.0 -->
+  <requires lib="gtk+" version="3.0"/>
   <object class="GtkAction" id="actionAbout">
     <property name="stock_id">gtk-about</property>
   </object>
@@ -11,49 +12,49 @@
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="stock">gtk-dnd</property>
-    <property name="icon-size">1</property>
+    <property name="icon_size">1</property>
   </object>
   <object class="GtkImage" id="image10">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="stock">gtk-refresh</property>
-    <property name="icon-size">1</property>
+    <property name="icon_size">1</property>
   </object>
   <object class="GtkImage" id="image2">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="stock">gtk-add</property>
-    <property name="icon-size">1</property>
+    <property name="icon_size">1</property>
   </object>
   <object class="GtkImage" id="image3">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="stock">gtk-remove</property>
-    <property name="icon-size">1</property>
+    <property name="icon_size">1</property>
   </object>
   <object class="GtkImage" id="image4">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="stock">gtk-redo</property>
-    <property name="icon-size">1</property>
+    <property name="icon_size">1</property>
   </object>
   <object class="GtkImage" id="image5">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="stock">gtk-info</property>
-    <property name="icon-size">1</property>
+    <property name="icon_size">1</property>
   </object>
   <object class="GtkImage" id="image6">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="stock">gtk-dialog-question</property>
-    <property name="icon-size">1</property>
+    <property name="icon_size">1</property>
   </object>
   <object class="GtkImage" id="image7">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="stock">gtk-dialog-warning</property>
-    <property name="icon-size">1</property>
+    <property name="icon_size">1</property>
   </object>
   <object class="GtkImage" id="image8">
     <property name="visible">True</property>
@@ -64,7 +65,7 @@
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="stock">gtk-select-font</property>
-    <property name="icon-size">1</property>
+    <property name="icon_size">1</property>
   </object>
   <object class="GtkWindow" id="winMain">
     <property name="can_focus">False</property>
@@ -158,8 +159,8 @@
                         <property name="use_underline">True</property>
                         <property name="image">image3</property>
                         <property name="use_stock">False</property>
-                        <accelerator key="Delete" signal="activate" modifiers="GDK_CONTROL_MASK"/>
                         <signal name="activate" handler="on_btnRemove_clicked" swapped="no"/>
+                        <accelerator key="Delete" signal="activate" modifiers="GDK_CONTROL_MASK"/>
                       </object>
                     </child>
                     <child>
@@ -179,8 +180,8 @@
                         <property name="use_underline">True</property>
                         <property name="image">image10</property>
                         <property name="use_stock">False</property>
-                        <accelerator key="F5" signal="activate"/>
                         <signal name="activate" handler="on_menuReload_activate" swapped="no"/>
+                        <accelerator key="F5" signal="activate"/>
                       </object>
                     </child>
                     <child>
@@ -240,8 +241,8 @@
                         <property name="can_focus">False</property>
                         <property name="image">image5</property>
                         <property name="use_stock">False</property>
-                        <accelerator key="F1" signal="activate"/>
                         <signal name="activate" handler="on_menuDoc_activate" swapped="no"/>
+                        <accelerator key="F1" signal="activate"/>
                       </object>
                     </child>
                     <child>
@@ -311,6 +312,25 @@
             <property name="expand">False</property>
             <property name="fill">True</property>
             <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label7">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="ypad">4</property>
+            <property name="label" translatable="yes">----placeholder----</property>
+            <property name="justify">center</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="foreground" value="#000000000000"/>
+              <attribute name="background" value="#fcfce9e94f4f"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
           </packing>
         </child>
         <child>
@@ -399,7 +419,6 @@
                                         <property name="sensitive">False</property>
                                         <property name="can_focus">False</property>
                                         <property name="tooltip_text" translatable="yes">Add a rule...</property>
-                                        <property name="use_action_appearance">False</property>
                                         <property name="label" translatable="yes">Add</property>
                                         <property name="use_underline">True</property>
                                         <property name="icon_name">list-add-symbolic</property>
@@ -417,7 +436,6 @@
                                         <property name="sensitive">False</property>
                                         <property name="can_focus">False</property>
                                         <property name="tooltip_text" translatable="yes">Remove the selected rule(s)</property>
-                                        <property name="use_action_appearance">False</property>
                                         <property name="label" translatable="yes">Remove</property>
                                         <property name="use_underline">True</property>
                                         <property name="icon_name">list-remove-symbolic</property>
@@ -445,7 +463,6 @@
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">True</property>
                                     <property name="margin_top">8</property>
-                                    <property name="use_action_appearance">False</property>
                                     <signal name="clicked" handler="on_btnUnlock_clicked" swapped="no"/>
                                     <child>
                                       <object class="GtkBox" id="box3">
@@ -603,8 +620,6 @@
                           <packing>
                             <property name="left_attach">0</property>
                             <property name="top_attach">2</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
                           </packing>
                         </child>
                         <child>
@@ -617,8 +632,6 @@
                           <packing>
                             <property name="left_attach">0</property>
                             <property name="top_attach">1</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
                           </packing>
                         </child>
                         <child>
@@ -636,8 +649,6 @@
                           <packing>
                             <property name="left_attach">1</property>
                             <property name="top_attach">2</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
                           </packing>
                         </child>
                         <child>
@@ -655,8 +666,6 @@
                           <packing>
                             <property name="left_attach">1</property>
                             <property name="top_attach">1</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
                           </packing>
                         </child>
                         <child>
@@ -669,8 +678,6 @@
                           <packing>
                             <property name="left_attach">0</property>
                             <property name="top_attach">0</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
                           </packing>
                         </child>
                         <child>
@@ -679,13 +686,10 @@
                             <property name="visible">True</property>
                             <property name="sensitive">False</property>
                             <property name="can_focus">True</property>
-                            <property name="use_action_appearance">False</property>
                           </object>
                           <packing>
                             <property name="left_attach">1</property>
                             <property name="top_attach">0</property>
-                            <property name="width">1</property>
-                            <property name="height">1</property>
                           </packing>
                         </child>
                       </object>
@@ -693,7 +697,7 @@
                   </object>
                 </child>
                 <child type="label">
-                  <object class="GtkLabel" id="label1">
+                  <object class="GtkLabel" id="label5">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes">&lt;b&gt;Firewall&lt;/b&gt;</property>
@@ -704,8 +708,6 @@
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">0</property>
-                <property name="width">1</property>
-                <property name="height">1</property>
               </packing>
             </child>
             <child>
@@ -719,8 +721,6 @@
               <packing>
                 <property name="left_attach">1</property>
                 <property name="top_attach">0</property>
-                <property name="width">1</property>
-                <property name="height">1</property>
               </packing>
             </child>
             <child>
@@ -736,8 +736,6 @@
               <packing>
                 <property name="left_attach">2</property>
                 <property name="top_attach">0</property>
-                <property name="width">1</property>
-                <property name="height">1</property>
               </packing>
             </child>
           </object>
